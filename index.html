@@ -650,20 +650,24 @@
                     <div class="row">
                         <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
                             <div class="bg-light my-2 p-3 pt-2">
-                                <form action="https://formspree.io/your@email.com" method="POST">
+                                <form method="POST">
                                     <div class="form-group my-2">
                                         <label for="name" class="form-label fw-bolder">Name</label>
-                                        <input class="form-control" type="text" id="name" name="name" required>
+                                        <input class="form-control" type="text" id="sender_name" name="sender_name"
+                                            required>
                                     </div>
                                     <div class="form-group my-2">
                                         <label for="email" class="form-label fw-bolder">Email</label>
-                                        <input class="form-control" type="email" id="email" name="_replyto" required>
+                                        <input class="form-control" type="email" id="sender_email" name="sender_email"
+                                            required>
                                     </div>
                                     <div class="form-group my-2">
                                         <label for="message" class="form-label fw-bolder">Message</label>
-                                        <textarea class="form-control" style="resize: none;" id="message" name="message"
-                                            rows="4" required></textarea>
+                                        <textarea class="form-control" style="resize: none;" id="email_body"
+                                            name="email_body" rows="4" required></textarea>
                                     </div>
+                                    <h4 id="response"></h4>
+                                    <input type="hidden" id="originator" value="portfolio" />
                                     <button class="btn btn-primary mt-2" type="submit">Send</button>
                                 </form>
                             </div>
@@ -758,9 +762,49 @@
             </footer>
         </div>
     </div>
-    <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon">
-                <i class="fas fa-angle-up fa-x"></i></span></a>
+    <div id="scrolltop"><a class="btn btn-secondary" href="#top">
+            <span class="icon">
+                <i class="fas fa-angle-up fa-x"></i>
+            </span>
+        </a>
     </div>
+    <script>
+        (() => {
+            const form = document.querySelector('form');
+            const submitResponse = document.querySelector('#response');
+            const formURL = 'https://m5n5xx6wgtsxex7lekg3qrkvua0aczui.lambda-url.eu-west-1.on.aws';
+
+            form.onsubmit = e => {
+                e.preventDefault();
+
+                // Capture the form data
+                let data = {};
+                Array.from(form).map(input => (data[input.id] = input.value));
+                console.log('Sending: ', JSON.stringify(data));
+                submitResponse.innerHTML = 'Sending...'
+
+                // Create the AJAX request
+                var xhr = new XMLHttpRequest();
+                xhr.open(form.method, formURL, true);
+                xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
+                xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+                // Send the collected data as JSON
+                xhr.send(JSON.stringify(data));
+
+                xhr.onloadend = response => {
+                    if (response.target.status === 200) {
+                        form.reset();
+                        submitResponse.innerHTML = 'Form submitted. Success!';
+                    } else {
+                        submitResponse.innerHTML = 'Error! Please try again.';
+                        console.error(JSON.parse(response));
+                    }
+                };
+            };
+        })();
+    </script>
+
     <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
     <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
     <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
