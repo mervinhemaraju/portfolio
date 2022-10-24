@@ -3,10 +3,26 @@
 <html lang="en-US">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4M8C5SEEXW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4M8C5SEEXW');
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MH Portfolio</title>
+    <meta name="author" content="Mervin Hemaraju">
+    <meta name="description" content="Mervin Hemaraju's portfolio website.">
+    <meta name="keywords" content="portfolio, mervin, hemaraju, mervin-hemaraju, mervinhemaraju">
+    <title>Mervin Hemaraju</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
     <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
@@ -59,8 +75,9 @@
                 <div class="cover bg-light">
                     <div class="container px-3">
                         <div class="row">
-                            <div class="col-lg-6 p-2"><img class="img-fluid" src="images/illustrations/hello.svg"
-                                    alt="hello" /></div>
+                            <div class="col-lg-6 p-2">
+                                <img class="img-fluid" src="images/illustrations/hello.svg" alt="hello" />
+                            </div>
                             <div class="col-lg-6">
                                 <div class="mt-5">
                                     <p class="lead text-uppercase mb-1">Hello!</p>
@@ -185,9 +202,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img
-                                class="avatar img-fluid mt-2" src="images/avatar.jpeg" width="400" height="400"
-                                alt="Mervin Hemaraju" /></div>
+                        <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100">
+                            <img class="avatar img-fluid mt-2" src="images/avatar.webp" width="400" height="400"
+                                alt="Mervin Hemaraju" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -398,7 +416,7 @@
                                             <div class="text-muted text-small">SysOps Engineer
                                                 <small>(Mar 2021 - May 2022)</small>
                                             </div>
-                                        </div><img src="images/experience/checkout.png" width="48" height="48"
+                                        </div><img src="images/experience/checkout.webp" width="48" height="48"
                                             alt="checkout" />
                                     </div>
                                 </div>
@@ -451,7 +469,7 @@
                                                 <small>(Oct 2019 - Mar 2021)</small>
                                             </div>
                                             <br>
-                                        </div><img src="images/experience/lbn.png" width="48" height="48" alt="lbn" />
+                                        </div><img src="images/experience/lbn.webp" width="48" height="48" alt="lbn" />
                                     </div>
                                 </div>
                                 <div class="card-body px-3 py-2">
@@ -498,7 +516,7 @@
                                             <div class="text-muted text-small">Video Network Specialist <small>(Feb 2018
                                                     - Oct 2021)</small>
                                             </div>
-                                        </div><img src="images/experience/obs.png" width="108" height="48" alt="obs" />
+                                        </div><img src="images/experience/obs.webp" width="108" height="48" alt="obs" />
                                     </div>
                                 </div>
                                 <div class="card-body px-3 py-2">
@@ -537,7 +555,7 @@
                                             <div class="text-muted text-small">Intership
                                                 <small>(Aug 2016 - Feb 2017)</small>
                                             </div>
-                                        </div><img src="images/experience/bbdo.png" width="48" height="48"
+                                        </div><img src="images/experience/bbdo.webp" width="48" height="48"
                                             alt="proximity" />
                                     </div>
                                 </div>
@@ -573,8 +591,8 @@
                     <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
                         <div class="grid-sizer"></div>
                         <div class="grid-item"><a href="https://github.com/mervinhemaraju/locky" target="_blank">
-                                <figure class="portfolio-item"><img src="images/portfolio/locky.png"
-                                        data-bp="images/portfolio/locky.png" />
+                                <figure class="portfolio-item"><img src="images/portfolio/locky.webp"
+                                        data-bp="images/portfolio/locky.webp" alt="locky" />
                                     <figcaption>
                                         <h4 class="h5 mb-0">Locky</h4>
                                         <div>Android App</div>
@@ -584,8 +602,8 @@
                         <div class="grid-item"><a
                                 href="https://github.com/mervinhemaraju/mauritius-emergency-service-api-go"
                                 target="_blank">
-                                <figure class="portfolio-item"><img src="images/portfolio/golang.png"
-                                        data-bp="images/portfolio/golang.jpg" />
+                                <figure class="portfolio-item"><img src="images/portfolio/golang.webp"
+                                        data-bp="images/portfolio/golang.webp" alt="golang" />
                                     <figcaption>
                                         <h4 class="h5 mb-0">M.E.S API</h4>
                                         <div>GO API</div>
@@ -593,28 +611,27 @@
                                 </figure>
                             </a></div>
                         <div class="grid-item"><a href="https://github.com/mervinhemaraju/m.e.s">
-                                <figure class="portfolio-item"><img src="images/portfolio/android.png"
-                                        data-bp="images/portfolio/android.png" />
+                                <figure class="portfolio-item"><img src="images/portfolio/android.webp"
+                                        data-bp="images/portfolio/android.webp" alt="android" />
                                     <figcaption>
                                         <h4 class="h5 mb-0">M.E.S</h4>
                                         <div>Android App</div>
                                     </figcaption>
                                 </figure>
                             </a></div>
-                        <div class="grid-item"><a
-                                href="https://github.com/mervinhemaraju/template-aws-terraform-lambda">
-                                <figure class="portfolio-item"><img src="images/portfolio/terraform.png"
-                                        data-bp="images/portfolio/terraform.jpg" />
+                        <div class="grid-item"><a href="https://github.com/mervinhemaraju/th3pl4gu3-aws">
+                                <figure class="portfolio-item"><img src="images/portfolio/terraform.webp"
+                                        data-bp="images/portfolio/terraform.webp" alt="terraform" />
                                     <figcaption>
-                                        <h4 class="h5 mb-0">Terraform AWS Lambda Template</h4>
-                                        <div>Terraform, AWS</div>
+                                        <h4 class="h5 mb-0">My AWS Setup with Terraform</h4>
+                                        <div>Terraform, AWS, Python</div>
                                     </figcaption>
                                 </figure>
                             </a></div>
                         <div class="grid-item"><a
                                 href="https://github.com/mervinhemaraju/mauritius-emergency-service-api">
-                                <figure class="portfolio-item"><img src="images/portfolio/python.png"
-                                        data-bp="images/portfolio/python.jpg" />
+                                <figure class="portfolio-item"><img src="images/portfolio/python.webp"
+                                        data-bp="images/portfolio/python.webp" alt="python" />
                                     <figcaption>
                                         <h4 class="h5 mb-0">M.E.S API</h4>
                                         <div>Flask API</div>
@@ -622,8 +639,8 @@
                                 </figure>
                             </a></div>
                         <div class="grid-item"><a href="https://github.com/mervinhemaraju/freshtasks">
-                                <figure class="portfolio-item"><img src="images/portfolio/freshservice.png"
-                                        data-bp="images/portfolio/freshservice.jpg" />
+                                <figure class="portfolio-item"><img src="images/portfolio/freshservice.webp"
+                                        data-bp="images/portfolio/freshservice.webp" alt="freshservice" />
                                     <figcaption>
                                         <h4 class="h5 mb-0">Freshtasks</h4>
                                         <div>Python, Freshservice, Pypi</div>
@@ -631,8 +648,8 @@
                                 </figure>
                             </a></div>
                         <div class="grid-item"><a href="https://github.com/mervinhemaraju/snappy">
-                                <figure class="portfolio-item"><img src="images/portfolio/python-boto3-aws.png"
-                                        data-bp="images/portfolio/python-boto3-aws.png" />
+                                <figure class="portfolio-item"><img src="images/portfolio/python-boto3-aws.webp"
+                                        data-bp="images/portfolio/python-boto3-aws.webp" alt="python-boto3-aws" />
                                     <figcaption>
                                         <h4 class="h5 mb-0">Snappy</h4>
                                         <div>Python, Boto3, Pypi</div>
