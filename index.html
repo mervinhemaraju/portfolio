@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<!-- upto 2 directory depth-->
+
+<!-- Metas and Stuff -->
 <html lang="en-US">
+
+<!-- Head Section -->
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -48,7 +51,11 @@
     </noscript>
 </head>
 
+<!-- Body Section -->
+
 <body id="top">
+
+    <!-- Header & Navigation -->
     <header class="bg-light">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
             <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="#">Mervin Hemaraju</a>
@@ -59,18 +66,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto me-2">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">My Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                         <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Main page content -->
     <div class="page-content">
+
         <div id="content">
+
+            <!-- Banner section-->
             <header>
                 <div class="cover bg-light">
                     <div class="container px-3">
@@ -147,6 +159,8 @@
                 </div>
                 <div class="wave-bg"></div>
             </header>
+
+            <!-- About section -->
             <div class="section pt-4 px-3 px-lg-4" id="about">
                 <div class="container-narrow">
                     <div class="row">
@@ -209,6 +223,110 @@
                     </div>
                 </div>
             </div>
+
+            <!-- My Projects section -->
+            <div class="section px-3 px-lg-4 pt-5" id="projects">
+                <div class="container-narrow">
+                    <div class="text-center mb-5">
+                        <h2 class="marker marker-center">My Projects</h2>
+                    </div>
+
+
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <img width=512 src="images/portfolio/mes.webp" data-bp="images/portfolio/mes.webp"
+                                alt="mes" />
+                        </div>
+                        <div class="col-md-6 pt-2 px-3 bg-light rounded">
+                            <h4>Mauritius Emergency Services</h4>
+
+                            <p>
+                                Yellow Pages? We are way past that era! With MES right in your pocket, you can make
+                                emergency calls in Mauritius on the go.
+                            </p>
+
+                            <p>
+                                Mauritius Emergency Services (MES) is a mobile app that i've created from scratch using
+                                Android, Kotlin, Python and
+                                Flask RESTful.
+                            </p>
+
+                            <p>
+
+                                More details available on MES official webpage:
+                                <a href="https://mes.mervinhemaraju.com">mes.mervinhemaraju.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-light mb-4">
+                        <div class="row">
+                            <div class="col-md-6 pt-2 px-3 bg-light">
+                                <h4>Mo Bizin Travay</h4>
+
+                                <p>
+                                    Mo Bizin Travay is an upcoming tool that will help mauritians find career
+                                    opportunities from
+                                    multiple recruiters in a centralized location.
+                                </p>
+
+                                <p>
+                                    Find job openings can be challenging in Mauritius specialy if they are being
+                                    advertised in multiple locations.
+                                </p>
+
+                                <p>
+                                    Mo Bizin Travay will help you find these openings in a single place.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <img width=512 src="images/portfolio/mobizintravay.webp"
+                                    data-bp="images/portfolio/mobizintravay.webp" alt="mobizintravay" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <img width=512 src="images/portfolio/terraform-aws-oracle.webp"
+                                data-bp="images/portfolio/terraform-aws-oracle.webp" alt="terraform-aws-oracle" />
+                        </div>
+                        <div class="col-md-6 pt-2 px-3 bg-light">
+                            <h4>Terraform Cloud IAC</h4>
+
+                            <p>
+                                This is my Terraform IAC setup for Oracle Cloud Infrastructure and Amazon Web Services
+                                Cloud.
+                            </p>
+
+                            <p>
+                                Below are the links of all the GitHub repositories for the cloud IAC setup.
+                            </p>
+
+                            <p>
+                                Oracle Cloud Helios:
+                                <a href="https://github.com/mervinhemaraju/oci-iac-zeus">GitHub Repo
+                                </a>
+                            </p>
+
+                            <p>
+                                AWS Clous Ares:
+                                <a href="https://github.com/mervinhemaraju/aws-iac-ares">GitHub Repo
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <h6 class="view-all-projects text-center">
+                        <a class="underlined" href="https://github.com/mervinhemaraju?tab=repositories">
+                            View all my projects
+                        </a>
+                    </h6>
+                </div>
+            </div>
+
+            <!-- Expertise section -->
             <div class="section px-3 px-lg-4 pt-5" id="expertise">
                 <div class="container-narrow">
                     <div class="text-center mb-5">
@@ -219,28 +337,64 @@
                             A preview of my most used skills. These are the ones that i am most strong at.
                         </p>
                     </div>
-                    <div class="row py-3">
-                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100"><img class="mb-2"
-                                src="images/expertise/programming.svg" width="96" height="96" alt="programming" />
+
+                    <!-- Expertise Batch 1 -->
+                    <div class="row py-3 expertise-batch-1">
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100">
+                            <img class="mb-2" width="60" height="60"
+                                src="https://img.icons8.com/pastel-glyph/100/source-code--v3.png"
+                                alt="source-code--v3" />
                             <div class="h5">Programming</div>
                         </div>
-                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200"><img class="mb-2"
-                                src="images/expertise/cloud-computing.svg" width="96" height="96"
-                                alt="cloud computing" />
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200">
+                            <img class="mb-2" width="60" height="60"
+                                src="https://img.icons8.com/pastel-glyph/100/cloud-development--v3.png"
+                                alt="cloud-development--v3" />
                             <div class="h5">Cloud Computing</div>
                         </div>
-                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="300"><img class="mb-2"
-                                src="images/expertise/automation.svg" width="96" height="96" alt="automation" />
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="300">
+                            <img class="mb-2" width="60" height="60"
+                                src="https://img.icons8.com/parakeet-line/100/merge-git.png" alt="merge-git" />
                             <div class="h5">Automation</div>
                         </div>
-                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="400"><img class="mb-2"
-                                src="images/expertise/terraform.svg" width="96" height="96" alt="terraform" />
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="400">
+                            <!-- <img class="mb-2"
+                                src="images/expertise/terraform.svg" width="96" height="96" alt="terraform" /> -->
+                            <img class="mb-2" width="60" height="60" src="https://img.icons8.com/ios/100/terraform.png"
+                                alt="terraform" />
                             <div class="h5">Terraform</div>
+                        </div>
+                    </div>
+
+                    <!-- Expertise Batch 2 -->
+                    <div class="row py-3 expertise-batch-2">
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100">
+                            <img class="mb-2" width="60" height="60"
+                                src="https://img.icons8.com/parakeet-line/100/my-computer.png" alt="my-computer" />
+                            <div class="h5">Server Administration</div>
+                        </div>
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200">
+                            <img class="mb-2" width="60" height="60"
+                                src="https://img.icons8.com/pastel-glyph/100/infinity-loop.png" alt="infinity-loop" />
+                            <div class="h5">CI CD</div>
+                        </div>
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="300">
+                            <img class="mb-2" width="60" height="60"
+                                src="https://img.icons8.com/windows/100/amazon-web-services.png"
+                                alt="amazon-web-services" />
+                            <div class="h5">Amazon Web Services Cloud</div>
+                        </div>
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="400">
+                            <img class="mb-2" width="60" height="60" src="https://img.icons8.com/wired/100/docker.png"
+                                alt="docker" />
+                            <div class="h5">Docker</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section px-3 px-lg-4 pt-5" id="skills">
+
+            <!-- Skills section -->
+            <!-- <div class="section px-3 px-lg-4 pt-5" id="skills">
                 <div class="container-narrow">
                     <div class="text-center mb-5">
                         <h2 class="marker marker-center">My Skills</h2>
@@ -394,7 +548,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
+            <!-- Experience section -->
             <div class="section px-3 px-lg-4 pt-5" id="experience">
                 <div class="container-narrow">
                     <div class="text-center mb-5">
@@ -583,7 +739,9 @@
                     </div>
                 </div>
             </div>
-            <div class="section px-2 px-lg-4 pt-5" id="portfolio">
+
+            <!-- Portfolio section -->
+            <!-- <div class="section px-2 px-lg-4 pt-5" id="portfolio">
                 <div class="container">
                     <div class="text-center mb-5">
                         <h2 class="marker marker-center">Portfolio </h2>
@@ -675,7 +833,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
+            <!-- Contact section -->
             <div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact">
                 <div class="container-narrow">
                     <div class="text-center mb-5">
@@ -754,6 +914,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Footer section -->
             <footer class="pt-4 pb-4 text-center bg-light">
                 <div class="container">
                     <div class="my-3">
@@ -791,17 +953,24 @@
                         <div>
                             <!-- Make sure to buy a license for the template before removing the line below. Buy license on https://templateflip.com/ -->Design
                             - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
+                        <a href="https://icons8.com/icon/kUIdznZvxAud/docker"></a> Icons by <a
+                            href="https://icons8.com">Icons8</a>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
-    <div id="scrolltop"><a class="btn btn-secondary" href="#top">
+
+    <!-- Scroll to Top button -->
+    <div id="scrolltop">
+        <a class="btn btn-secondary" href="#top">
             <span class="icon">
                 <i class="fas fa-angle-up fa-x"></i>
             </span>
         </a>
     </div>
+
+    <!-- Scriptings -->
     <script type="text/javascript">
         function getAge() {
             var from = "16/03/1996".split("/");
@@ -860,6 +1029,8 @@
     <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="./scripts/aos.min.js?ver=1.2.0"></script>
     <script src="./scripts/main.js?ver=1.2.0"></script>
+
+    <!-- End of file -->
 </body>
 
 </html>
