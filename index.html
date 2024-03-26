@@ -232,13 +232,13 @@
                     </div>
 
 
-                    <div class="row mb-4">
-                        <div class="col-md-6">
-                            <img width=512 src="images/portfolio/mes.webp" data-bp="images/portfolio/mes.webp"
-                                alt="mes" />
+                    <div class="row mb-4 bg-light rounded shadow-sm">
+                        <div class="col-md-6 p-2">
+                            <img width=512 src="images/portfolio/mes-phones.webp"
+                                data-bp="images/portfolio/mes-phones.webp" alt="mes-phones" />
                         </div>
-                        <div class="col-md-6 pt-2 px-3 bg-light rounded">
-                            <h4>Mauritius Emergency Services</h4>
+                        <div class="col-md-6 pt-2 px-3">
+                            <h4>Mauritius Emergency Services App</h4>
 
                             <p>
                                 Yellow Pages? We are way past that era! With MES right in your pocket, you can make
@@ -246,49 +246,88 @@
                             </p>
 
                             <p>
-                                Mauritius Emergency Services (MES) is a mobile app that i've created from scratch using
-                                Android, Kotlin, Python and
-                                Flask RESTful.
+                                Mauritius Emergency Services (MES) is a native mobile app that i've created from scratch
+                                using Android & Kotlin
                             </p>
 
                             <p>
+                                Find it now on
+                                <a
+                                    href="https://play.google.com/store/apps/details?id=com.th3pl4gu3.mauritius_emergency_services">
+                                    Playstore
+                                </a>
+                            </p>
+
+                            <p>
+                                Find it also on its
+                                <a href="https://github.com/mervinhemaraju/m.e.s">
+                                    GitHub repo
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4 bg-light rounded shadow-sm">
+                        <div class="col-md-6 pt-2">
+                            <h4>Mauritius Emergency Services API</h4>
+
+                            <p>
+                                The RESTful API that the Mauritius Emergency Services App uses to get its information.
+                            </p>
+
+                            <p>
+                                The API provides you a list of all emergency contacts in Mauritius.
+                                It also gives you cyclone information such as precautionary guides and current cyclone
+                                levels on the island.
+                            </p>
+
+                            <p>
+                                This API was built using Python and Flask from scratch.
 
                                 More details available on MES official webpage:
                                 <a href="https://mes.mervinhemaraju.com">mes.mervinhemaraju.com
                                 </a>
                             </p>
                         </div>
-                    </div>
-
-                    <div class="bg-light mb-4">
-                        <div class="row">
-                            <div class="col-md-6 pt-2 px-3 bg-light">
-                                <h4>Mo Bizin Travay</h4>
-
-                                <p>
-                                    Mo Bizin Travay is an upcoming tool that will help mauritians find career
-                                    opportunities from
-                                    multiple recruiters in a centralized location.
-                                </p>
-
-                                <p>
-                                    Find job openings can be challenging in Mauritius specialy if they are being
-                                    advertised in multiple locations.
-                                </p>
-
-                                <p>
-                                    Mo Bizin Travay will help you find these openings in a single place.
-                                </p>
-                            </div>
-                            <div class="col-md-6">
-                                <img width=512 src="images/portfolio/mobizintravay.webp"
-                                    data-bp="images/portfolio/mobizintravay.webp" alt="mobizintravay" />
-                            </div>
+                        <div class="col-md-6 pt-2 pb-2">
+                            <img class="pe-2" width=512 src="images/portfolio/mes.webp"
+                                data-bp="images/portfolio/mes.webp" alt="mes" />
                         </div>
                     </div>
 
-                    <div class="row mb-4">
-                        <div class="col-md-6">
+                    <div class="row mb-4 bg-light rounded shadow-sm">
+                        <div class="col-md-6 pt-2">
+                            <h4>Mo Bizin Travay</h4>
+
+                            <p>
+                                Mo Bizin Travay is an upcoming tool that will help mauritians find career
+                                opportunities from
+                                multiple recruiters in a centralized location.
+                            </p>
+
+                            <p>
+                                Find job openings can be challenging in Mauritius specialy if they are being
+                                advertised in multiple locations.
+                            </p>
+
+                            <p>
+                                Mo Bizin Travay will help you find these openings in a single place.
+                            </p>
+
+                            <p>
+                                Follow its progress
+                                <a href="https://github.com/mervinhemaraju/mo-bizin-travay">here
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-md-6 pt-2 pb-2">
+                            <img class="pe-2" width=512 src="images/portfolio/mobizintravay.webp"
+                                data-bp="images/portfolio/mobizintravay.webp" alt="mobizintravay" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-4 bg-light rounded">
+                        <div class="col-md-6 p-2">
                             <img width=512 src="images/portfolio/terraform-aws-oracle.webp"
                                 data-bp="images/portfolio/terraform-aws-oracle.webp" alt="terraform-aws-oracle" />
                         </div>
@@ -308,9 +347,9 @@
                                 Oracle Cloud Helios:
                                 <a href="https://github.com/mervinhemaraju/oci-iac-zeus">GitHub Repo
                                 </a>
-                            </p>
 
-                            <p>
+                                <br>
+
                                 AWS Clous Ares:
                                 <a href="https://github.com/mervinhemaraju/aws-iac-ares">GitHub Repo
                                 </a>
@@ -989,7 +1028,7 @@
         (() => {
             const form = document.querySelector('form');
             const submitResponse = document.querySelector('#response');
-            const formURL = 'https://2yykkq5n26mz4gduys4elfpmyq0cnjyo.lambda-url.eu-west-1.on.aws';
+            const formURL = 'https://al7vb7on5aw5q3mw7oenslqlku0hlhfj.lambda-url.eu-west-1.on.aws';
 
             form.onsubmit = e => {
                 e.preventDefault();
