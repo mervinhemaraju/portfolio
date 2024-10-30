@@ -1,0 +1,22 @@
+/* Define CSS variables */
+:root {
+    --color-primary: #07243e;
+    --color-accent: #c38fff;
+    --color-text: #a6d5ff;
+}
+
+body.bg-surface {
+    background-color: var(--color-primary) !important;
+}
+
+.text-headers {
+    color: var(--color-text)
+}
+
+.text-item {
+    color: var(--color-text)
+}
+
+.text-item:hover {
+    color: var(--color-accent)
+}
