@@ -13,7 +13,12 @@
     font-style: normal; */
 }
 
-body.bg-surface {
+html {
+    scroll-behavior: smooth;
+}
+
+body.bg-surface,
+nav {
     background-color: var(--color-primary) !important;
 }
 
