@@ -1,10 +1,10 @@
 /* Define CSS variables */
 :root {
-    --color-primary: #07243e;
+    --color-primary: #091a31;
     --color-accent: #c38fff;
     --color-ripple: #c38fff25;
-    --color-text: #a6d5ff;
-    --color-text-light: #5c7b96;
+    --color-text: #cdd6f6;
+    --color-text-light: #8992b0;
 }
 
 * {
@@ -15,6 +15,10 @@
 
 body.bg-surface {
     background-color: var(--color-primary) !important;
+}
+
+.hidden {
+    display: none;
 }
 
 .text-accent {
@@ -47,5 +51,29 @@ body.bg-surface {
 }
 
 .icon-primary {
-    fill: #497299
+    fill: var(--color-text-light)
+}
+
+.tab-content[aria-hidden="true"] {
+    display: none;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content:target {
+    display: block;
+}
+
+.tab-item {
+    color: var(--color-text-light);
+    padding: 0;
+    font-weight: lighter;
+    font-size: larger
+}
+
+
+#experienceTab a[aria-selected="true"] {
+    color: var(--color-accent);
 }
