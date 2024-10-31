@@ -2,11 +2,23 @@
 :root {
     --color-primary: #07243e;
     --color-accent: #c38fff;
+    --color-ripple: #c38fff25;
     --color-text: #a6d5ff;
+    --color-text-light: #5c7b96;
+}
+
+* {
+    font-family: "NTR", sans-serif;
+    /* font-weight: 400;
+    font-style: normal; */
 }
 
 body.bg-surface {
     background-color: var(--color-primary) !important;
+}
+
+.text-accent {
+    color: var(--color-accent)
 }
 
 .text-headers {
@@ -19,4 +31,21 @@ body.bg-surface {
 
 .text-item:hover {
     color: var(--color-accent)
+}
+
+.text-paragraph {
+    color: var(--color-text-light);
+}
+
+.button-primary {
+    border: var(--color-accent) 1px solid;
+    color: var(--color-accent)
+}
+
+.button-primary:hover {
+    background-color: var(--color-ripple);
+}
+
+.icon-primary {
+    fill: #497299
 }
