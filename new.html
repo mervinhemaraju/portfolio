@@ -32,7 +32,7 @@
                 <div class="relative flex h-16 items-center justify-between">
                     <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         <!-- Mobile menu button-->
-                        <button type="button"
+                        <button type="button" id="mobile-menu-button"
                             class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                             aria-controls="mobile-menu" aria-expanded="false">
                             <span class="absolute -inset-0.5"></span>
@@ -90,20 +90,21 @@
             </div>
 
             <!-- Mobile menu, show/hide based on menu state. -->
-            <!-- TODO(Hide/show menu on mobile) -->
-            <div class="sm:hidden" id="mobile-menu">
+            <div class="hidden" id="mobile-menu">
                 <div class="space-y-1 px-2 pb-3 pt-2">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="#" class="block px-3 py-2 text-base font-medium text-item" aria-current="page">Home</a>
-                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-item">About Me</a>
-                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-item">Experience</a>
-                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-item">Pet Projects</a>
+                    <a href="#home" class="block px-3 py-2 text-base font-medium text-item" aria-current="page">Home</a>
+                    <a href="#aboutme" class="block rounded-md px-3 py-2 text-base font-medium text-item">About Me</a>
+                    <a href="#experience"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-item">Experience</a>
+                    <a href="#projects" class="block rounded-md px-3 py-2 text-base font-medium text-item">Pet
+                        Projects</a>
                 </div>
             </div>
         </nav>
 
-        <div class="banner w-screen pt-28">
-            <div class="w-1/5 flex justify-center items-center mx-auto mb-9">
+        <div class="banner w-screen pt-28 px-4">
+            <div class="w-2/5 md:w-1/5 flex justify-center items-center mx-auto mb-9">
                 <!-- <i class="fa-brands text-9xl fa-instagram"></i> -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" id="cloud-connection"
                     class="icon-primary">
@@ -126,7 +127,7 @@
 
 
             </div>
-            <div class="w-3/5 mb-3 justify-center mx-auto text-center">
+            <div class="mb-3 justify-center mx-auto text-center">
 
                 <h1 class="text-7xl tracking-tight leading-10 font-thin text-headers mb-3">
                     hey,
@@ -137,7 +138,7 @@
                 <h2 class="text-5xl text-paragraph font-thin">I code when i'm bored.</h2>
             </div>
 
-            <div class="w-2/5 justify-center mx-auto text-center mb-8">
+            <div class="w-full md:w-2/5 justify-center mx-auto text-center mb-8">
                 <h4 class="text-xl text-paragraph">
                     I'm a platform engineer from Mauritius. I'm all about coding and bringing ideas to life—like my own
                     Android app on the Play Store! When I'm not coding, you'll find me watching movies or catching up on
@@ -146,9 +147,9 @@
                 </h4>
             </div>
 
-            <div class="w-2/5 flex justify-evenly items-center mx-auto mb-9">
+            <div class="w-2/5 flex flex-col sm:flex-row justify-evenly items-center mx-auto mb-9">
                 <button type="button"
-                    class="button-primary focus:ring-4 focus:outline-none font-medium rounded-sm text-lg px-5 py-2.5 text-center me-2">
+                    class="button-primary focus:ring-4 focus:outline-none font-medium rounded-sm text-lg px-5 py-2.5 text-center me-2 mb-2 sm:mb-0">
                     <i class="fa-regular fa-envelope me-2"></i>
                     Talk to me
                 </button>
@@ -174,51 +175,60 @@
                 <hr class="w-96 ms-2 h-0.5 border-0 rounded" style="background-color: #315370;">
             </div>
 
-            <div
-                class="content mt-4 grid grid-cols-[65%_35%] gap-4 text-paragraph text-xl font-thin tracking-wider leading-relaxed">
-                <div>
-                    <p class="mb-8">
-                        I'm a platform engineer at <span class="text-accent">Checkout</span> mostly cloud and coding. I
-                        love finding ways to streamline
-                        processes, boost efficiency, and ensure our platforms are always ready to scale effortlessly.
-                    </p>
+            <div class="mx-auto p-4">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-8/12 p-2 mb-5">
+                        <div class="text-paragraph text-xl font-thin tracking-wider leading-relaxed">
+                            <p class="mb-8">
+                                I'm a platform engineer at <span class="text-accent">Checkout</span> mostly cloud and
+                                coding. I
+                                love finding ways to streamline
+                                processes, boost efficiency, and ensure our platforms are always ready to scale
+                                effortlessly.
+                            </p>
 
-                    <p class="mb-4">
-                        Below are some of the technologies that i've worked with:
-                    </p>
+                            <p class="mb-4">
+                                Below are some of the technologies that i've worked with:
+                            </p>
 
-                    <div class="mb-8 grid grid-cols-[50%_50%]">
-                        <div>
-                            <ol>
-                                <li class="text-accent">Amazon Web Services</li>
-                                <li class="text-accent">Alibaba Cloud</li>
-                                <li class="text-accent">Oracle Cloud</li>
-                                <li class="text-accent">Terraform & OpenTofu</li>
-                                <li class="text-accent">Ansible & Awx</li>
-                            </ol>
-                        </div>
-                        <div>
-                            <ol>
-                                <li class="text-accent">Kotlin</li>
-                                <li class="text-accent">Git</li>
-                                <li class="text-accent">Docker</li>
-                                <li class="text-accent">Windows & Linux Administration</li>
-                            </ol>
+                            <div class="mb-8 grid grid-cols-[50%_50%]">
+                                <div>
+                                    <ol>
+                                        <li class="text-accent">Amazon Web Services</li>
+                                        <li class="text-accent">Alibaba Cloud</li>
+                                        <li class="text-accent">Oracle Cloud</li>
+                                        <li class="text-accent">Terraform & OpenTofu</li>
+                                        <li class="text-accent">Ansible & Awx</li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <ol>
+                                        <li class="text-accent">Kotlin</li>
+                                        <li class="text-accent">Git</li>
+                                        <li class="text-accent">Docker</li>
+                                        <li class="text-accent">Windows & Linux Administration</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <p>
+                                Outside of work, I love <span class="text-accent">coding</span> for myself, I manage my
+                                own
+                                personal cloud environment and i also
+                                play a lot of <span class="text-accent">call of duty</span>.
+                            </p>
                         </div>
                     </div>
+                    <div class="w-full md:w-4/12 p-2 mb-5">
 
-                    <p>
-                        Outside of work, I love <span class="text-accent">coding</span> for myself, I manage my own
-                        personal cloud environment and i also
-                        play a lot of <span class="text-accent">call of duty</span>.
-                    </p>
-                </div>
-                <div class="bg-white p-4">
-                    <!-- Content for the second column -->
-                    <p>Second column content goes here.</p>
+                        <div class="bg-white">
+
+                            <!-- Content for the second column -->
+                            <p>Second column content goes here.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </section>
 
         <!-- Experience Section -->
@@ -268,27 +278,105 @@
                             <h3 class="text-3xl text-headers mb-1">IT Platform Engineer</h3>
                             <h4 class="text-xl text-paragraph font-thin mb-4">2021 - PRESENT</h4>
 
-                            <ul class="pt-2">
-                                <li class="">The cats are cute.</li>
-                                <li class="">The birds are singing.</li>
-                            </ul>
+                            <ol class="text-paragraph">
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Managed multiple AWS cloud environment in the enterprise impacting thousands of
+                                    merchants across the world.
+                                </li>
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Designed and implemented an automated Backup and restore solution for the
+                                    enterprise.
+                                </li>
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Designed and implemented an automated ECS instance refresh solution for the
+                                    enterprise.
+                                </li>
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Designed and implemented a JIT automated solution for the
+                                    enterprise
+                                </li>
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Designed and implemented an automated solution to
+                                    process leavers in the company
+                                </li>
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Designed multiple automation tools with python, terraform,
+                                    Slack, Freshworks & Spacelift.
+                                </li>
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Migrated several cloud resources to Infrastructure as a
+                                    Code.
+                                </li>
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Designed and implemented a SFTP server alongside
+                                    an automated tool to onboard new merchants.
+                                </li>
+                            </ol>
                         </div>
                         <div class="text-left text-gray-200 hidden" id="linkbynet-action" role="tabpanel"
                             aria-labelledby="linkbynet">
                             <h3 class="text-3xl text-headers mb-1">Network & Security Administrator</h3>
                             <h4 class="text-xl text-paragraph font-thin mb-4">2019 - 2021</h4>
-                            <ul class="pt-2">
-                                <li class="">The dogs are barking.</li>
-                                <li class="">The fish are swimming.</li>
-                            </ul>
+                            <ol class="text-paragraph">
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Worked on several firewall technologies such as Checkpoint, Fortinet, Netfilter but
+                                    mainly Checkpoint Worked on AWS Cloud technology to manage security groups Performed
+                                    several network flow management which was impacting thousands of users around the
+                                    globe Performed SSL installation on F5 Load Balancer Performed SSL installation on
+                                    HAProxy Deployed Virtual Servers on F5 Load Balancer.
+                                </li>
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Worked on Cisco ASA to manage
+                                    flows for customers. Deployed a Checkpoint Firewall in High Availability cluster
+                                    mode from scratch in LAB environment Deployed several Arista Switches and configured
+                                    them with VLAN in LAB environments
+                                </li>
+
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Built and deployed Python Scripts to improve administrators' workflow, increasing
+                                    scalability, and optimizing speed Automated several tasks on Checkpoint Firewall
+                                    which improved workflow and ticket handling. Managed Python scripts and Ansible
+                                    playbooks in production environment to automate complex and time consuming tasks.
+                                </li>
+                            </ol>
                         </div>
                         <div class="text-left text-gray-200 hidden" id="obs-action" role="tabpanel"
                             aria-labelledby="obs">
                             <h3 class="text-3xl text-headers mb-1">Video Network Specialist</h3>
                             <h4 class="text-xl text-paragraph font-thin mb-4">2018 - 2019</h4>
-                            <ul class="pt-2">
-                                <li class="">The dogs are barking.</li>
-                                <li class="">The fish are swimming.</li>
+                            <ul class="text-paragraph">
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Worked as a dedicated support for General Electric Company on Cisco Telepresence
+                                    endpoints. Worked with Core devices such as Cisco Unified Call Manager &
+                                    Telepresence Management Suite to register endpoints and perform troubleshooting in
+                                    case of failing devices.
+                                </li>
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Worked with General Electric Network team to troubleshoot
+                                    issues on the network. Liaised directly with Cisco in need for a return merchandise
+                                    authorization. Worked with Cisco engineers to troubleshoot issues on failing
+                                    Telepresence devices.
+                                </li>
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Designed and coded a C# based Windows Presentation Foundation (WPF) application to
+                                    help experts with a concise follow up on tickets internally in Orange Business
+                                    Services. They used to do ticket follow up manually. I advised them with the WPF
+                                    approach and designed the whole program for them.
+                                </li>
                             </ul>
                         </div>
                         <div class="text-left text-gray-200 hidden" id="proximity-action" role="tabpanel"
@@ -296,9 +384,19 @@
                             <h3 class="text-3xl text-headers mb-1">Intern</h3>
                             <h4 class="text-xl text-paragraph font-thin mb-4">2016 - <span class="text-lg">6
                                     months</span></h4>
-                            <ul class="pt-2">
-                                <li class="">The dogs are barking.</li>
-                                <li class="">The fish are swimming.</li>
+                            <ul class="text-paragraph">
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Worked on small Java Projects including Java Server Pages. Learned Core Programming
+                                    in Java. Worked with MongoDB Database to connect to a Java Website. Worked on the
+                                    front-end team for 3 months
+                                </li>
+                                <li class="mb-4">
+                                    <i class="fa-solid fa-circle-dot text-xs text-accent mt-1 me-2"></i>
+                                    Learned front-end technologies such as Sass, CSS Grids, Jade/Pug. Learned unit
+                                    testing. Worked with JUnit mostly with JSP. Learned TDD unit testing. Selenium
+                                    testing with Java
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -334,7 +432,6 @@
         </section>
     </main>
 
-
     <footer class="text-center text-paragraph pt-9 pb-9">
         <h5>Built, designed and deployed by Mervin Hemaraju</h5>
         <h6 class="text-sm">All rights reserved. &#169;</h6>
@@ -345,6 +442,12 @@
             const tabs = document.querySelectorAll('#experienceTab li a');
             const tabContents = document.querySelectorAll('#experienceTabContent > div');
             const links = document.querySelectorAll('nav a');
+
+
+            document.getElementById('mobile-menu-button').addEventListener('click', function () {
+                var menu = document.getElementById('mobile-menu');
+                menu.classList.toggle('hidden');
+            });
 
             for (const link of links) {
                 link.addEventListener('click', function (e) {

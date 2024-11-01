@@ -1,8 +1,8 @@
 /* Define CSS variables */
 :root {
     --color-primary: #091a31;
-    --color-accent: #c38fff;
-    --color-ripple: #c38fff25;
+    --color-accent: #b1ff34;
+    --color-ripple: #b1ff341a;
     --color-text: #cdd6f6;
     --color-text-light: #8992b0;
 }
@@ -44,6 +44,21 @@ nav {
 
 .text-paragraph {
     color: var(--color-text-light);
+}
+
+.text-paragraph li {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-paragraph li i {
+    margin-right: 8px;
+    /* Adjust the spacing as needed */
+}
+
+.text-paragraph li::marker {
+    content: none;
+    /* Remove default list marker */
 }
 
 .button-primary {
