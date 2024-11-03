@@ -10,19 +10,20 @@
 
 @keyframes slideUp {
     0% {
-      transform: translateY(100%);
-      opacity: 0;
+        transform: translateY(100%);
+        opacity: 0;
     }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
-  .animate-slideUp {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slideUp {
     animation: slideUp 0.5s ease-out;
-  }
-  
+}
+
 * {
     font-family: "NTR", sans-serif;
     /* font-weight: 400;
@@ -42,9 +43,9 @@ nav {
     background-color: var(--color-surface) !important;
 }
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 .text-accent {
     color: var(--color-accent)

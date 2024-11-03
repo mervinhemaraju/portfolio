@@ -27,38 +27,34 @@
     <header id="home" class="pb-32">
 
         <!-- Navigation bar -->
-        <nav class="bg-primary fixed top-0 left-0 w-full z-50">
-
+        <nav class="bg-primary top-0 left-0 w-full z-50">
             <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div class="relative flex h-16 items-center justify-between">
+
                     <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+
                         <!-- Mobile menu button-->
                         <button type="button" id="mobile-menu-button"
                             class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                             aria-controls="mobile-menu" aria-expanded="false">
-                            <span class="absolute -inset-0.5"></span>
+                            <span class="absolute inset-0.5"></span>
                             <span class="sr-only">Open main menu</span>
-                            <!--
-                  Icon when menu is closed.
-      
-                  Menu open: "hidden", Menu closed: "block"
-                -->
-                            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+
+                            <svg id="icon-open" class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" aria-hidden="true" data-slot="icon">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
-                            <!--
-                  Icon when menu is open.
-      
-                  Menu open: "block", Menu closed: "hidden"
-                -->
-                            <svg class="hidden h-6 w-6" fill="none" viewBox="0 24 24" stroke-width="1.5"
+
+                            <svg id="icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 24 24" stroke-width="1.5"
                                 stroke="currentColor" aria-hidden="true" data-slot="icon">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                             </svg>
+
                         </button>
+
                     </div>
+
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div class="hidden sm:ml-6 sm:block">
                             <div class="flex space-x-3 items-center">
@@ -74,16 +70,20 @@
                     </div>
                     <div
                         class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                        <a href="#" class="rounded-md px-2 py-0 text-xl font-bold text-item">
+                        <a href="mailto:mervinhemaraju16@gmail.com" target="_blank"
+                            class="rounded-md px-2 py-0 text-xl font-bold text-item">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
-                        <a href="#" class="rounded-md px-2 py-0 text-xl font-bold text-item">
+                        <a href="https://github.com/mervinhemaraju/" target="_blank"
+                            class="rounded-md px-2 py-0 text-xl font-bold text-item">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="#" class="rounded-md px-2 py-0 text-xl font-bold text-item">
+                        <a href="https://www.linkedin.com/in/mervinh16" target="_blank"
+                            class="rounded-md px-2 py-0 text-xl font-bold text-item">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
-                        <a href="#" class="rounded-md px-2 py-0 text-xl font-bold text-item">
+                        <a href="https://stackoverflow.com/users/6884119/mervin-hemaraju" target="_blank"
+                            class="rounded-md px-2 py-0 text-xl font-bold text-item">
                             <i class="fa-brands fa-stack-overflow"></i>
                         </a>
                     </div>
@@ -208,16 +208,17 @@
             </div>
 
             <div class="w-2/5 flex flex-col sm:flex-row justify-evenly items-center mx-auto mb-9">
-                <button type="button"
+                <a href="mailto:mervinhemaraju16@gmail.com"
                     class="button-primary focus:ring-4 focus:outline-none font-medium rounded-sm text-lg px-5 py-2.5 text-center me-2 mb-2 sm:mb-0">
                     <i class="fa-regular fa-envelope me-2"></i>
                     Talk to me
-                </button>
-                <button type="button"
-                    class="button-primary focus:ring-4 focus:outline-none font-medium rounded-sm text-lg px-5 py-2.5 text-center me-2">
+                </a>
+                <a href="files/resume.pdf"
+                    class="button-primary focus:ring-4 focus:outline-none font-medium rounded-sm text-lg px-5 py-2.5 text-center me-2"
+                    download>
                     <i class="fa-regular fa-file me-2"></i>
                     My resume
-                </button>
+                </a>
             </div>
         </div>
     </header>
@@ -235,7 +236,7 @@
             </div>
 
             <div class="mx-auto">
-                <div class="flex flex-wrap">
+                <div class="flex flex-col-reverse md:flex-row w-full">
                     <div class="w-full md:w-8/12 mb-5">
                         <div class="text-paragraph text-xl font-thin tracking-wider leading-relaxed">
                             <p class="mb-8">
@@ -278,13 +279,21 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-full md:w-4/12 mb-5">
+                    <div class="w-full md:w-4/12 mb-5 text-center p-12">
 
-                        <div class="bg-white">
-
-                            <!-- Content for the second column -->
-                            <p>Second column content goes here.</p>
-                        </div>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 102 122.88" class="icon-primary">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill-rule: evenodd;
+                                    }
+                                </style>
+                            </defs>
+                            <title>freelancer-freelance</title>
+                            <path class="cls-1"
+                                d="M48.29,66.57a14.5,14.5,0,0,0,2.94.3,13.9,13.9,0,0,0,8-2.34A18.76,18.76,0,0,0,61.12,63l1.07-1c3.42-3.25,5.88-5.59,5.4-11.27h0a1.74,1.74,0,0,1,.27-1.07,1.69,1.69,0,0,1,2.34-.48,3.11,3.11,0,0,0,.63.32,1.79,1.79,0,0,0,.46.11c.28,0,.27.12.32.08s0-.15.13-.44l1.66-4.74a2.94,2.94,0,0,0,.11-1.53.32.32,0,0,0-.12-.18,1.23,1.23,0,0,0-.62-.07,4.29,4.29,0,0,0-2.14.91,1.73,1.73,0,0,1-1.33.33,1.7,1.7,0,0,1-1.38-2c1.22-7.15.67-11.8-.84-14.95a12.47,12.47,0,0,0-5.47-5.52,22.29,22.29,0,0,1-12.47,4.8,19.26,19.26,0,0,0-9.84,3.44,9.22,9.22,0,0,0-3.64,4.52,11.55,11.55,0,0,0-.14,6.38,1.71,1.71,0,0,1-2.25,2l-1.21-.44c-1.31-.46-2.25-.69-2.58-.05a14.93,14.93,0,0,0,.27,5A3.63,3.63,0,0,0,31,49.37a1.16,1.16,0,0,0,.56.14,3.62,3.62,0,0,0,1-.16,1.59,1.59,0,0,1,.5-.09,1.69,1.69,0,0,1,1.73,1.65c.14,5.8,2.73,8,5.88,10.74L42,62.82a17.47,17.47,0,0,0,6.3,3.75ZM51,100.7a7.74,7.74,0,1,1-7.74,7.74A7.75,7.75,0,0,1,51,100.7ZM63.4,65.46l.65.94c1,1.45,2.11,3.1,3.15,4.39,6.19,3.84,19.79,4.88,25.11,7.84,13.54,7.55,8.6,25.88,9.58,39.08-.3,3.12-2.07,4.9-5.54,5.17H92.59l4.12-31.27a3.76,3.76,0,0,0-3.54-4.43H52.73C54,77.89,65.38,77.84,65.66,73.5a56.66,56.66,0,0,1-4-5.45l-.47-.7a15.72,15.72,0,0,1-9.34,3.17,17.91,17.91,0,0,1-11.17-4.4,32.11,32.11,0,0,1-3,7,1.61,1.61,0,0,1-.35.34c.47,3.82,13.56,8.7,14.35,13.76H9.5A3.76,3.76,0,0,0,6,91.61l4.12,31.27H6.32c-3.47-.27-5.24-2-5.53-5.17.18-14-5.13-30.88,9.58-39.08,5.39-3,19.28-4,25.34-8A51,51,0,0,0,38.24,64c-3.34-2.87-6.11-5.36-6.73-11.15a4.48,4.48,0,0,1-2.16-.58A6.64,6.64,0,0,1,26.47,48a18.6,18.6,0,0,1-.31-6.55,1.91,1.91,0,0,1,.11-.41c.7-2,1.72-2.73,3-2.85l-.38-.25c-.52-6.46,1-17.67-6-19.79C36.19,1.7,51.49-7.23,63,7.37,76.65,8.09,82.24,29.53,71.76,39l-.05.41a6,6,0,0,1,.82-.12,4.44,4.44,0,0,1,2.46.47,3.57,3.57,0,0,1,1.76,2.13,6.17,6.17,0,0,1-.08,3.5L74.94,50.3a3.88,3.88,0,0,1-1.21,2,3.59,3.59,0,0,1-2.6.65H71c-.21,5.48-2.92,8.06-6.52,11.48l-1.06,1-.06.06Z" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -479,18 +488,176 @@
                         <div class="mr-auto">
                             <i class="fa-solid fa-folder-closed text-accent text-2xl"></i>
                         </div>
-                        <div>
+                        <a href="https://github.com/mervinhemaraju/m.e.s" target="_blank">
                             <i class="fa-brands fa-github text-xl text-headers"></i>
-                        </div>
-                        <div>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.th3pl4gu3.mauritius_emergency_services"
+                            target="_blank">
                             <i class="fa-regular fa-window-maximize text-xl text-headers"></i>
-                        </div>
+                        </a>
                     </div>
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold text-headers">Noteworthy technology acquisitions 2021</h5>
+                        <h5 class="mb-2 text-2xl font-bold text-headers">Mauritius Emergency Services App</h5>
                     </a>
-                    <p class="mb-3 font-normal text-paragraph">Here are the biggest enterprise technology acquisitions
-                        of 2021 so far, in reverse chronological order.</p>
+                    <p class="mb-3 font-normal text-paragraph">
+                        Mauritius Emergency Services (MES) is a native mobile app that i've created from scratch using
+                        Android & Kotlin. It helps mauritians find emergency contacts right from their pockets.
+                    </p>
+                </div>
+
+                <div class="w-72 p-6 rounded-lg shadow bg-surface m-1 hover:-translate-y-3 hover:scale-80">
+                    <div class="flex justify-between space-x-4 mb-4">
+                        <div class="mr-auto">
+                            <i class="fa-solid fa-folder-closed text-accent text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/mervinhemaraju/mauritius-emergency-service-api" target="_blank">
+                            <i class="fa-brands fa-github text-xl text-headers"></i>
+                        </a>
+                        <a href="https://mes.mervinhemaraju.com/web" target="_blank">
+                            <i class="fa-regular fa-window-maximize text-xl text-headers"></i>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold text-headers">Mauritius Emergency Services API</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-paragraph">
+                        The Mauritius Emergency Services App uses a RESTful API that provides a list of all emergency
+                        contacts in Mauritius, along with cyclone information such as precautionary guides and current
+                        cyclone levels. This API was built from scratch and is hosted on my personal cloud.
+                    </p>
+                </div>
+
+                <div class="w-72 p-6 rounded-lg shadow bg-surface m-1 hover:-translate-y-3 hover:scale-80">
+                    <div class="flex justify-between space-x-4 mb-4">
+                        <div class="mr-auto">
+                            <i class="fa-solid fa-folder-closed text-accent text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/mervinhemaraju/mo-bizin-travay" target="_blank">
+                            <i class="fa-brands fa-github text-xl text-headers"></i>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold text-headers">Mo Bizin Travay</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-paragraph">
+                        Mo Bizin Travay is an upcoming tool designed to help Mauritians find career opportunities by
+                        centralizing job openings from multiple recruiters, making it easier to access all listings in
+                        one place instead of searching across various sources.
+                    </p>
+                </div>
+
+                <div class="w-72 p-6 rounded-lg shadow bg-surface m-1 hover:-translate-y-3 hover:scale-80">
+                    <div class="flex justify-between space-x-4 mb-4">
+                        <div class="mr-auto">
+                            <i class="fa-solid fa-folder-closed text-accent text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/mervinhemaraju/hawkeye" target="_blank">
+                            <i class="fa-brands fa-github text-xl text-headers"></i>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold text-headers">Hawkeye</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-paragraph">
+                        Hawkeye is an event monitoring tool that captures records about specific AWS roles on AWS and
+                        then sends them in real-time on a Slack Channel.
+                    </p>
+                </div>
+
+                <div class="w-72 p-6 rounded-lg shadow bg-surface m-1 hover:-translate-y-3 hover:scale-80">
+                    <div class="flex justify-between space-x-4 mb-4">
+                        <div class="mr-auto">
+                            <i class="fa-solid fa-folder-closed text-accent text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/mervinhemaraju/hawkeye" target="_blank">
+                            <i class="fa-brands fa-github text-xl text-headers"></i>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold text-headers">LockMe</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-paragraph">
+                        Lock Me is an unofficial android application that allows you to lock your phone without using
+                        the physical
+                        button on your device.
+
+                        It makes use of the new Accessiblity Services API provided by Android to send announcement
+                        events when a user press the lock button provided by the app.
+                    </p>
+                </div>
+
+                <div class="w-72 p-6 rounded-lg shadow bg-surface m-1 hover:-translate-y-3 hover:scale-80">
+                    <div class="flex justify-between space-x-4 mb-4">
+                        <div class="mr-auto">
+                            <i class="fa-solid fa-folder-closed text-accent text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/mervinhemaraju/fortweet" target="_blank">
+                            <i class="fa-brands fa-github text-xl text-headers"></i>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold text-headers">Fortweet</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-paragraph">
+                        The Fortweet project consists of a Dynamic Web App and a Static API which capture live tweets of
+                        Twitter, for a certain amount of time, about the online Battle Royale game Fortnite
+                    </p>
+                </div>
+
+                <div class="w-72 p-6 rounded-lg shadow bg-surface m-1 hover:-translate-y-3 hover:scale-80">
+                    <div class="flex justify-between space-x-4 mb-4">
+                        <div class="mr-auto">
+                            <i class="fa-solid fa-folder-closed text-accent text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/mervinhemaraju/locky" target="_blank">
+                            <i class="fa-brands fa-github text-xl text-headers"></i>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold text-headers">Locky</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-paragraph">
+                        Locky is an easy to use password manager that is designed with minimalist components and adheres
+                        to the material design. It's time to stop writing passwords on papers or use short unsafe
+                        passwords just for the sake of remembering it. You can save any passwords and bank cards offline
+                        on your own phone.
+                    </p>
+                </div>
+
+                <div class="w-72 p-6 rounded-lg shadow bg-surface m-1 hover:-translate-y-3 hover:scale-80">
+                    <div class="flex justify-between space-x-4 mb-4">
+                        <div class="mr-auto">
+                            <i class="fa-solid fa-folder-closed text-accent text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/mervinhemaraju/puppet" target="_blank">
+                            <i class="fa-brands fa-github text-xl text-headers"></i>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold text-headers">Puppet</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-paragraph">
+                        Puppet is an upcoming android application that will allow you to perform tasks based on custom
+                        events.
+                    </p>
+                </div>
+
+                <div class="w-72 p-6 rounded-lg shadow bg-surface m-1 hover:-translate-y-3 hover:scale-80">
+                    <div class="flex justify-between space-x-4 mb-4">
+                        <div class="mr-auto">
+                            <i class="fa-solid fa-folder-closed text-accent text-2xl"></i>
+                        </div>
+                        <a href="https://github.com/mervinhemaraju/aws-iam-scanner" target="_blank">
+                            <i class="fa-brands fa-github text-xl text-headers"></i>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold text-headers">Aws IAM Scanner</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-paragraph">
+                        It is a tool to scan AWS IAM actions being used in python scripts and then outputs it into an
+                        IAM policy. This was created to facilitates the life of people who builds scripts on AWS.
+                    </p>
                 </div>
 
             </div>
@@ -508,27 +675,16 @@
 
             const tabs = document.querySelectorAll('#experienceTab li a');
             const tabContents = document.querySelectorAll('#experienceTabContent > div');
-            const links = document.querySelectorAll('nav a');
 
 
             document.getElementById('mobile-menu-button').addEventListener('click', function () {
                 var menu = document.getElementById('mobile-menu');
+                const iconOpen = document.getElementById('icon-open');
+                const iconClose = document.getElementById('icon-close');
                 menu.classList.toggle('hidden');
+                iconOpen.classList.toggle('hidden');
+                iconClose.classList.toggle('hidden');
             });
-
-            for (const link of links) {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetElement = document.getElementById(targetId);
-
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            }
 
             tabs.forEach(tab => {
                 tab.addEventListener('click', function (event) {
