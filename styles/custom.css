@@ -2,6 +2,7 @@
 :root {
     --color-primary: #091a31;
     --color-accent: #b1ff34;
+    --color-surface: #10223f;
     --color-ripple: #b1ff341a;
     --color-text: #cdd6f6;
     --color-text-light: #8992b0;
@@ -17,9 +18,13 @@ html {
     scroll-behavior: smooth;
 }
 
-body.bg-surface,
+body.bg-primary,
 nav {
     background-color: var(--color-primary) !important;
+}
+
+.bg-surface {
+    background-color: var(--color-surface) !important;
 }
 
 .hidden {
