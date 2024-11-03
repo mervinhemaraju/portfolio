@@ -189,7 +189,7 @@
 
             <div class="mb-3 justify-center mx-auto text-center">
 
-                <h1 class="text-7xl tracking-tight leading-10 font-thin text-headers mb-3">
+                <h1 class="text-7xl font-thin text-headers mb-3">
                     hey,
                     <span class="text-accent font-bold">mervin</span>
                     here.
@@ -223,21 +223,20 @@
     </header>
 
     <!-- Main content -->
-    <main class="w-4/6 mx-auto p-4">
+    <main class="md:w-4/6 mx-auto p-4">
 
         <!-- About Me Section -->
         <section id="aboutme" class="mb-32">
 
             <div class="header-title flex items-center mb-12">
                 <h2 class="text-headers text-5xl">
-                    > about me
+                    ./ about me
                 </h2>
-                <hr class="w-96 ms-2 h-0.5 border-0 rounded" style="background-color: #315370;">
             </div>
 
-            <div class="mx-auto p-4">
+            <div class="mx-auto">
                 <div class="flex flex-wrap">
-                    <div class="w-full md:w-8/12 p-2 mb-5">
+                    <div class="w-full md:w-8/12 mb-5">
                         <div class="text-paragraph text-xl font-thin tracking-wider leading-relaxed">
                             <p class="mb-8">
                                 I'm a platform engineer at <span class="text-accent">Checkout</span> mostly cloud and
@@ -279,7 +278,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-full md:w-4/12 p-2 mb-5">
+                    <div class="w-full md:w-4/12 mb-5">
 
                         <div class="bg-white">
 
@@ -296,13 +295,12 @@
 
             <div class="header-title flex items-center mb-12">
                 <h2 class="text-headers text-5xl">
-                    > experience
+                    ./ experience
                 </h2>
-                <hr class="w-96 ms-2 h-0.5 border-0 rounded" style="background-color: #315370;">
             </div>
 
-            <div class="flex flex-wrap -mx-2 p-5">
-                <div class="md:w-2/12 px-2 mb-3">
+            <div class="flex flex-wrap mx-2">
+                <div class="md:w-2/12 px-2 mb-6">
                     <ul class="flex-col space-y-6" id="experienceTab" role="tablist">
                         <li id="checkout">
                             <a class="tab-item" data-toggle="tab" href="#checkout-action" role="tab"
@@ -470,71 +468,13 @@
 
             <div class="header-title flex items-center mb-12">
                 <h2 class="text-headers text-5xl">
-                    > pet projects
+                    ./ pet projects
                 </h2>
-                <hr class="w-96 ms-2 h-0.5 border-0 rounded" style="background-color: #315370;">
             </div>
 
-            <div class="flex flex-wrap">
+            <div class="flex flex-wrap justify-center">
 
-                <div class="w-72 p-6 rounded-lg shadow bg-surface m-2">
-                    <div class="flex justify-between space-x-4 mb-4">
-                        <div class="mr-auto">
-                            <i class="fa-solid fa-folder-closed text-accent text-2xl"></i>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-github text-xl text-headers"></i>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-window-maximize text-xl text-headers"></i>
-                        </div>
-                    </div>
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold text-headers">Noteworthy technology acquisitions 2021</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-paragraph">Here are the biggest enterprise technology acquisitions
-                        of 2021 so far, in reverse chronological order.</p>
-                </div>
-
-                <div class="w-72 p-6 rounded-lg shadow bg-surface m-2">
-                    <div class="flex justify-between space-x-4 mb-4">
-                        <div class="mr-auto">
-                            <i class="fa-solid fa-folder-closed text-accent text-2xl"></i>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-github text-xl text-headers"></i>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-window-maximize text-xl text-headers"></i>
-                        </div>
-                    </div>
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold text-headers">Noteworthy technology acquisitions 2021</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-paragraph">Here are the biggest enterprise technology acquisitions
-                        of 2021 so far, in reverse chronological order.</p>
-                </div>
-
-                <div class="w-72 p-6 rounded-lg shadow bg-surface m-2">
-                    <div class="flex justify-between space-x-4 mb-4">
-                        <div class="mr-auto">
-                            <i class="fa-solid fa-folder-closed text-accent text-2xl"></i>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-github text-xl text-headers"></i>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-window-maximize text-xl text-headers"></i>
-                        </div>
-                    </div>
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold text-headers">Noteworthy technology acquisitions 2021</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-paragraph">Here are the biggest enterprise technology acquisitions
-                        of 2021 so far, in reverse chronological order.</p>
-                </div>
-
-                <div class="w-72 p-6 rounded-lg shadow bg-surface m-2">
+                <div class="w-72 p-6 rounded-lg shadow bg-surface m-1 hover:-translate-y-3 hover:scale-80">
                     <div class="flex justify-between space-x-4 mb-4">
                         <div class="mr-auto">
                             <i class="fa-solid fa-folder-closed text-accent text-2xl"></i>
@@ -565,6 +505,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+
             const tabs = document.querySelectorAll('#experienceTab li a');
             const tabContents = document.querySelectorAll('#experienceTabContent > div');
             const links = document.querySelectorAll('nav a');
@@ -613,6 +554,7 @@
                     // Show the clicked tab content
                     const target = document.querySelector(this.getAttribute('href'));
                     target.classList.remove('hidden');
+                    target.classList.add('animate-slideUp');
                 });
             });
         });

@@ -8,6 +8,21 @@
     --color-text-light: #8992b0;
 }
 
+@keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slideUp {
+    animation: slideUp 0.5s ease-out;
+  }
+  
 * {
     font-family: "NTR", sans-serif;
     /* font-weight: 400;
@@ -77,18 +92,6 @@ nav {
 
 .icon-primary {
     fill: var(--color-text-light)
-}
-
-.tab-content[aria-hidden="true"] {
-    display: none;
-}
-
-.tab-content {
-    display: none;
-}
-
-.tab-content:target {
-    display: block;
 }
 
 .tab-item {
