@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+
+<!-- Metas and Stuff -->
+<html lang="en-US">
+
+<!-- Head Section -->
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4M8C5SEEXW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4M8C5SEEXW');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mervin Hemaraju">
+    <meta name="description" content="Mervin Hemaraju's portfolio website.">
+    <meta name="keywords" content="portfolio, mervin, hemaraju, mervin-hemaraju, mervinhemaraju">
+    <title>Mervin Hemaraju</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print"
+        onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+    </noscript>
+    <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
+    <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+        </style>
+    </noscript>
+</head>
+
+<!-- Body Section -->
+
+<body id="top">
+
+    <!-- Header & Navigation -->
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
+            <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="#">Mervin Hemaraju</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-2">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">My Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main page content -->
+    <div class="page-content">
+
+        <div id="content">
+
+            <!-- Banner section-->
+            <header>
+                <div class="cover bg-light">
+                    <div class="container px-3">
+                        <div class="row">
+                            <div class="col-lg-6 p-2">
+                                <img class="img-fluid" src="images/illustrations/hello.svg" alt="hello" />
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mt-5">
+                                    <p class="lead text-uppercase mb-1">Hello!</p>
+                                    <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I’m Mervin
+                                        Hemaraju</h1>
+                                    <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">IT Platform
+                                        Engineer</p>
+                                    <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
+                                        <nav role="navigation">
+                                            <ul class="nav justify-content-left">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" target="_blank"
+                                                        href="https://www.linkedin.com/in/mervinh16" title="LinkedIn">
+                                                        <i class="fab fa-linkedin fa-lg"></i>
+                                                        <span class=" menu-title sr-only">LinkedIn</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" target="_blank"
+                                                        href="https://github.com/mervinhemaraju" title="GitHub"><i
+                                                            class="fab fa-github fa-lg"></i><span
+                                                            class="menu-title sr-only">GitHub</span></a></li>
+                                                <li class="nav-item"><a class="nav-link" target="_blank"
+                                                        href="https://stackoverflow.com/users/6884119/mervin-hemaraju"
+                                                        title="Stackoverflow"><i
+                                                            class="fab fa-stack-overflow fa-lg"></i><span
+                                                            class="menu-title sr-only">StackOverflow</span></a></li>
+                                                <li class="nav-item"><a class="nav-link" target="_blank"
+                                                        href="https://www.facebook.com/mervin16" title="Facebook"><i
+                                                            class="fab fa-facebook fa-lg"></i><span
+                                                            class="menu-title sr-only">Facebook</span></a></li>
+                                                <li class="nav-item"><a class="nav-link" target="_blank"
+                                                        href="https://www.instagram.com/mervinh16" title="Instagram"><i
+                                                            class="fab fa-instagram fa-lg"></i><span
+                                                            class="menu-title sr-only">Instagram</span></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a
+                                            class="btn btn-primary shadow-sm mt-1 hover-effect" href="#contact">Get In
+                                            Touch <i class="fas fa-arrow-right"></i></a></div>
+                                    <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a
+                                            class="btn btn-primary shadow-sm mt-1 hover-effect" href="#contact">Download
+                                            CV <i class="fa fa-download"></i></a></div> -->
+                                    <div class="section px-3 px-lg-4 pt-5" id="button-references">
+                                        <div class="container-narrow">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a
+                                                            class="btn btn-primary shadow-sm mt-1 hover-effect"
+                                                            href="#contact">Get In
+                                                            Touch <i class="fas fa-arrow-right"></i></a></div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a
+                                                            class="btn btn-primary shadow-sm mt-1 hover-effect"
+                                                            href="files/resume.pdf" download>Download
+                                                            CV <i class="fa fa-download"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave-bg"></div>
+            </header>
+
+            <!-- About section -->
+            <div class="section pt-4 px-3 px-lg-4" id="about">
+                <div class="container-narrow">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="h4 my-2">Hello! I’m Mervin Hemaraju.</h2>
+                            <p>An experienced IT Platform Engineer with a demonstrated history of working in the
+                                telecommunication's and Cloud industry. Skilled in Cloud computing, server maintenance,
+                                automation and scripting development. Develops my own applications and APIs to
+                                facilitate my life and for fun. I am always up to learning and building new things. For
+                                all my works, please visit my GitHub link found below in the Social section</p>
+                            <div class="row mt-3">
+                                <div class="col-sm-2">
+                                    <div class="pb-1">Age:</div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div id="my-age" class="pb-1 fw-bolder">26</div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="pb-1">Email:</div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="pb-1 fw-bolder">
+                                        <a href="mailto:mervinhemaraju16@gmail.com">
+                                            mervinhemaraju16@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="pb-1">WhatsApp:</div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="pb-1 fw-bolder">
+                                        <a href="tel:+23058001196">
+                                            +230-5-8001196
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="pb-1">Phone:</div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="pb-1 fw-bolder">
+                                        <a href="tel:+23058001196">
+                                            +230-5-8001196
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="pb-1">Address:</div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="pb-1 fw-bolder">Beau Bassin, Mauritius</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100">
+                            <img width="500" class="img-fluid" src="images/illustrations/boy.svg" alt="boy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Projects section -->
+            <div class="section px-3 px-lg-4 pt-5" id="projects">
+                <div class="container-narrow">
+                    <div class="text-center mb-5">
+                        <h2 class="marker marker-center">My Projects</h2>
+                    </div>
+
+
+                    <div class="row mb-4 bg-light rounded shadow-sm">
+                        <div class="col-md-6 p-2">
+                            <img width=512 src="images/portfolio/mes-phones.webp"
+                                data-bp="images/portfolio/mes-phones.webp" alt="mes-phones" />
+                        </div>
+                        <div class="col-md-6 pt-2 px-3">
+                            <h4>Mauritius Emergency Services App</h4>
+
+                            <p>
+                                Yellow Pages? We are way past that era! With MES right in your pocket, you can make
+                                emergency calls in Mauritius on the go.
+                            </p>
+
+                            <p>
+                                Mauritius Emergency Services (MES) is a native mobile app that i've created from scratch
+                                using Android & Kotlin
+                            </p>
+
+                            <p>
+                                Find it now on
+                                <a
+                                    href="https://play.google.com/store/apps/details?id=com.th3pl4gu3.mauritius_emergency_services">
+                                    Playstore
+                                </a>
+                            </p>
+
+                            <p>
+                                Find it also on its
+                                <a href="https://github.com/mervinhemaraju/m.e.s">
+                                    GitHub repo
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4 bg-light rounded shadow-sm">
+                        <div class="col-md-6 pt-2">
+                            <h4>Mauritius Emergency Services API</h4>
+
+                            <p>
+                                The RESTful API that the Mauritius Emergency Services App uses to get its information.
+                            </p>
+
+                            <p>
+                                The API provides you a list of all emergency contacts in Mauritius.
+                                It also gives you cyclone information such as precautionary guides and current cyclone
+                                levels on the island.
+                            </p>
+
+                            <p>
+                                This API was built using Python and Flask from scratch.
+
+                                More details available on MES official webpage:
+                                <a href="https://mes.mervinhemaraju.com">mes.mervinhemaraju.com
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-md-6 pt-2 pb-2">
+                            <img class="pe-2" width=512 src="images/portfolio/mes.webp"
+                                data-bp="images/portfolio/mes.webp" alt="mes" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-4 bg-light rounded shadow-sm">
+                        <div class="col-md-6 pt-2">
+                            <h4>Mo Bizin Travay</h4>
+
+                            <p>
+                                Mo Bizin Travay is an upcoming tool that will help mauritians find career
+                                opportunities from
+                                multiple recruiters in a centralized location.
+                            </p>
+
+                            <p>
+                                Finding job openings can be challenging in Mauritius specialy if they are being
+                                advertised in multiple locations.
+                            </p>
+
+                            <p>
+                                Mo Bizin Travay will help you find these openings in a single place.
+                            </p>
+
+                            <p>
+                                Follow its progress
+                                <a href="https://github.com/mervinhemaraju/mo-bizin-travay">here
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-md-6 pt-2 pb-2">
+                            <img class="pe-2" width=512 src="images/portfolio/mobizintravay.webp"
+                                data-bp="images/portfolio/mobizintravay.webp" alt="mobizintravay" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-4 bg-light rounded">
+                        <div class="col-md-6 p-2">
+                            <img width=512 src="images/portfolio/terraform-aws-oracle.webp"
+                                data-bp="images/portfolio/terraform-aws-oracle.webp" alt="terraform-aws-oracle" />
+                        </div>
+                        <div class="col-md-6 pt-2 px-3 bg-light">
+                            <h4>Terraform Cloud IAC</h4>
+
+                            <p>
+                                This is my Terraform IAC setup for Oracle Cloud Infrastructure and Amazon Web Services
+                                Cloud.
+                            </p>
+
+                            <p>
+                                Below are the links of all the GitHub repositories for the cloud IAC setup.
+                            </p>
+
+                            <p>
+                                Oracle Cloud Helios:
+                                <a href="https://github.com/mervinhemaraju/oci-iac-zeus">GitHub Repo
+                                </a>
+
+                                <br>
+
+                                AWS Clous Ares:
+                                <a href="https://github.com/mervinhemaraju/aws-iac-ares">GitHub Repo
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <h6 class="view-all-projects text-center">
+                        <a class="underlined" href="https://github.com/mervinhemaraju?tab=repositories">
+                            View all my projects
+                        </a>
+                    </h6>
+                </div>
+            </div>
+
+            <!-- Expertise section -->
+            <div class="section px-3 px-lg-4 pt-5" id="expertise">
+                <div class="container-narrow">
+                    <div class="text-center mb-5">
+                        <h2 class="marker marker-center">My Expertise</h2>
+                    </div>
+                    <div class="text-center">
+                        <p class="mx-auto mb-3" style="max-width:600px">
+                            A preview of my most used skills. These are the ones that i am most strong at.
+                        </p>
+                    </div>
+
+                    <!-- Expertise Batch 1 -->
+                    <div class="row py-3 expertise-batch-1">
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100">
+                            <img class="mb-2" width="60" height="60"
+                                src="https://img.icons8.com/pastel-glyph/100/source-code--v3.png"
+                                alt="source-code--v3" />
+                            <div class="h5">Programming</div>
+                        </div>
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200">
+                            <img class="mb-2" width="60" height="60"
+                                src="https://img.icons8.com/pastel-glyph/100/cloud-development--v3.png"
+                                alt="cloud-development--v3" />
+                            <div class="h5">Cloud Computing</div>
+                        </div>
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="300">
+                            <img class="mb-2" width="60" height="60"
+                                src="https://img.icons8.com/parakeet-line/100/merge-git.png" alt="merge-git" />
+                            <div class="h5">Automation</div>
+                        </div>
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="400">
+                            <!-- <img class="mb-2"
+                                src="images/expertise/terraform.svg" width="96" height="96" alt="terraform" /> -->
+                            <img class="mb-2" width="60" height="60" src="https://img.icons8.com/ios/100/terraform.png"
+                                alt="terraform" />
+                            <div class="h5">Terraform</div>
+                        </div>
+                    </div>
+
+                    <!-- Expertise Batch 2 -->
+                    <div class="row py-3 expertise-batch-2">
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100">
+                            <img class="mb-2" width="60" height="60"
+                                src="https://img.icons8.com/parakeet-line/100/my-computer.png" alt="my-computer" />
+                            <div class="h5">Server Administration</div>
+                        </div>
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200">
+                            <img class="mb-2" width="60" height="60"
+                                src="https://img.icons8.com/pastel-glyph/100/infinity-loop.png" alt="infinity-loop" />
+                            <div class="h5">CI CD</div>
+                        </div>
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="300">
+                            <img class="mb-2" width="60" height="60"
+                                src="https://img.icons8.com/windows/100/amazon-web-services.png"
+                                alt="amazon-web-services" />
+                            <div class="h5">Amazon Web Services Cloud</div>
+                        </div>
+                        <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="400">
+                            <img class="mb-2" width="60" height="60" src="https://img.icons8.com/wired/100/docker.png"
+                                alt="docker" />
+                            <div class="h5">Docker</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills section -->
+            <!-- <div class="section px-3 px-lg-4 pt-5" id="skills">
+                <div class="container-narrow">
+                    <div class="text-center mb-5">
+                        <h2 class="marker marker-center">My Skills</h2>
+                    </div>
+                    <div class="text-center">
+                        <p class="mx-auto mb-3" style="max-width:600px">I am a quick learner and specialize in multitude
+                            of skills required for Platform Engineering & DevOps</p>
+                    </div>
+                    <div class="bg-light p-3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">Amazon Web
+                                            Services</span></div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 90%"
+                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">AWS
+                                            Lambda</span></div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 90%"
+                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">AWS API
+                                            Gateway</span></div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">AWS
+                                            SSM</span></div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 90%"
+                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">AWS
+                                            EC2</span></div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 70%"
+                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">Python</span></div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 90%"
+                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">Kotlin & Java</span>
+                                    </div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 70%"
+                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">Terraform &
+                                            Ansible</span>
+                                    </div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">Git</span></div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 70%"
+                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">Powershell</span>
+                                    </div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 50%"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">Docker</span></div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 50%"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">Spacelift</span>
+                                    </div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">API</span>
+                                    </div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">Windows &
+                                            Linux</span></div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 60%"
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="py-1">
+                                    <div class="d-flex text-small fw-bolder"><span class="me-auto">Firewall & Network
+                                            Automation</span>
+                                    </div>
+                                    <div class="progress my-1">
+                                        <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
+                                            data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 60%"
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Experience section -->
+            <div class="section px-3 px-lg-4 pt-5" id="experience">
+                <div class="container-narrow">
+                    <div class="text-center mb-5">
+                        <h2 class="marker marker-center">Experience</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-3" data-aos="fade-right" data-aos-delay="100">
+                                <div class="card-header px-3 py-2">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h3 class="h5 mb-1">Checkout</h3>
+                                            <div class="text-muted text-secondary">Engineer L2, IT Platform
+                                                <small>(Jul 2022 - Present)</small>
+                                            </div>
+                                            <div class="text-muted text-small">Engineer L1, IT Platform
+                                                <small>(May 2022 - Jul 2022)</small>
+                                            </div>
+                                            <div class="text-muted text-small">SysOps Engineer
+                                                <small>(Mar 2021 - May 2022)</small>
+                                            </div>
+                                        </div><img src="images/experience/checkout.webp" width="48" height="48"
+                                            alt="checkout" />
+                                    </div>
+                                </div>
+                                <div class="card-body px-3 py-2">
+                                    <p>
+                                        Managed a dedicated AWS cloud environment in the enterprise.
+
+                                        Managed other AWS environments in the enterprise, involving mgmt and
+                                        production servers
+                                    </p>
+                                    <p>
+                                        Designed and implemented a Disaster Recovery solution for the enterprise
+
+                                        Designed and implemented an automated Patching Solution for the Enterprise.
+
+                                        Designed an automated solution to process leavers in the company.
+                                    </p>
+                                    <p>
+                                        Designing and using automation tools and technologies for build and deployment
+                                        with python, terraform and Spacelift.
+                                    </p>
+                                    <p>
+                                        Worked on multiple automation projects using core python programming.
+                                    </p>
+                                    <p>
+                                        Hands-on experience with various enterprise applications and IT services, as
+                                        well as Automation Softwares such as Terraform, Python, SDKs, Spacelift, Ansible
+                                        etc...
+                                    </p>
+                                    <p>
+                                        Ensure the best user experience with automation tools by using daily
+                                        productivity software such as Slack and Fresh service integrations with AWS
+                                        cloud technologies
+                                    </p>
+
+                                    <p>
+                                        Worked on multiple projects involving core AWS services such as Lambda and API
+                                        Gateway
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-3" data-aos="fade-left" data-aos-delay="300">
+                                <div class="card-header px-3 py-2">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h3 class="h5 mb-1">LinkByNet</h3>
+                                            <div class="text-muted text-small">Network Administrator
+                                                <small>(Oct 2019 - Mar 2021)</small>
+                                            </div>
+                                            <br>
+                                        </div><img src="images/experience/lbn.webp" width="48" height="48" alt="lbn" />
+                                    </div>
+                                </div>
+                                <div class="card-body px-3 py-2">
+
+                                    <h6>Network Administrator:</h6>
+
+                                    <p>
+                                        Worked on several firewall technologies such as Checkpoint, Fortinet, Netfilter
+                                        but mainly Checkpoint
+                                        Worked on AWS Cloud technology to manage security groups
+                                        Performed several network flow management which was impacting thousands of users
+                                        around the globe
+                                        Performed SSL installation on F5 Load Balancer
+                                        Performed SSL installation on HAProxy
+                                        Deployed Virtual Servers on F5 Load Balancer.
+                                        Worked on Cisco ASA to manage flows for customers.
+                                        Deployed a Checkpoint Firewall in High Availability cluster mode from scratch in
+                                        LAB environment
+                                        Deployed several Arista Switches and configured them with VLAN in LAB
+                                        environments
+                                    </p>
+
+                                    <br>
+
+                                    <h6>Side DevOps Projects</h6>
+
+                                    <p>
+                                        Built and deployed Python Scripts to improve administrators' workflow,
+                                        increasing scalability, and optimizing speed
+                                        Automated several tasks on Checkpoint Firewall which improved workflow and
+                                        ticket handling.
+                                        Managed Python scripts and Ansible playbooks in production environment to
+                                        automate complex and time consuming tasks.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-3" data-aos="fade-right" data-aos-delay="200">
+                                <div class="card-header px-3 py-2">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h3 class="h5 mb-1">Orange Business Services</h3>
+                                            <div class="text-muted text-small">Video Network Specialist <small>(Feb 2018
+                                                    - Oct 2021)</small>
+                                            </div>
+                                        </div><img src="images/experience/obs.webp" width="108" height="48" alt="obs" />
+                                    </div>
+                                </div>
+                                <div class="card-body px-3 py-2">
+
+                                    <h6>Main Role:</h6>
+
+                                    <p>
+                                        Worked as a dedicated support for General Electric Company on
+                                        Cisco
+                                        Telepresence endpoints. Worked with Core devices such as Cisco Unified Call
+                                        Manager & Telepresence Management Suite to register endpoints and perform
+                                        troubleshooting in case of failing devices. Worked with General Electric Network
+                                        team to troubleshoot issues on the network. Liaised directly with Cisco in need
+                                        for a return merchandise authorization. Worked with Cisco engineers to
+                                        troubleshoot issues on failing Telepresence devices.
+                                    </p>
+
+                                    <h6>Side Projects:</h6>
+
+                                    <p>
+                                        Designed and coded a C# based Windows Presentation
+                                        Foundation
+                                        (WPF) application to help experts with a concise follow up on tickets internally
+                                        in Orange Business Services. They used to do ticket follow up manually. I
+                                        advised them with the WPF approach and designed the whole program for them.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-3" data-aos="fade-left" data-aos-delay="400">
+                                <div class="card-header px-3 py-2">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h3 class="h5 mb-1">RAPP (Formerly Proximity BBDO)</h3>
+                                            <div class="text-muted text-small">Intership
+                                                <small>(Aug 2016 - Feb 2017)</small>
+                                            </div>
+                                        </div><img src="images/experience/bbdo.webp" width="48" height="48"
+                                            alt="proximity" />
+                                    </div>
+                                </div>
+                                <div class="card-body px-3 py-2">
+                                    <p>
+                                        Worked on small Java Projects including Java Server Pages
+                                    </p>
+
+                                    <p>Learned Core Programming in Java</p>
+
+                                    <p>Worked with MongoDB Database to connect to a Java Website </p>
+
+                                    <p> Worked on the front-end team for 3 months</p>
+
+                                    <p>Learned front-end technologies such as Sass, CSS Grids, Jade/Pug</p>
+
+                                    <p>Learned unit testing. Worked with JUnit mostly with JSP</p>
+
+                                    <p>Learned TDD unit testing</p>
+
+                                    <p>Learned Selenium testing with Java</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio section -->
+            <!-- <div class="section px-2 px-lg-4 pt-5" id="portfolio">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <h2 class="marker marker-center">Portfolio </h2>
+                    </div>
+                    <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item"><a href="https://github.com/mervinhemaraju/locky" target="_blank">
+                                <figure class="portfolio-item"><img src="images/portfolio/locky.webp"
+                                        data-bp="images/portfolio/locky.webp" alt="locky" />
+                                    <figcaption>
+                                        <h4 class="h5 mb-0">Locky</h4>
+                                        <div>Android App</div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item"><a
+                                href="https://github.com/mervinhemaraju/mauritius-emergency-service-api-go"
+                                target="_blank">
+                                <figure class="portfolio-item"><img src="images/portfolio/golang.webp"
+                                        data-bp="images/portfolio/golang.webp" alt="golang" />
+                                    <figcaption>
+                                        <h4 class="h5 mb-0">M.E.S API</h4>
+                                        <div>GO API</div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item"><a
+                                href="https://github.com/mervinhemaraju/mauritius-emergency-service-api">
+                                <figure class="portfolio-item"><img src="images/portfolio/mes.webp"
+                                        data-bp="images/portfolio/mes.webp" alt="python" />
+                                    <figcaption>
+                                        <h4 class="h5 mb-0">M.E.S API</h4>
+                                        <div>Flask API</div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item"><a href="https://github.com/mervinhemaraju/m.e.s">
+                                <figure class="portfolio-item"><img src="images/portfolio/android.webp"
+                                        data-bp="images/portfolio/android.webp" alt="android" />
+                                    <figcaption>
+                                        <h4 class="h5 mb-0">M.E.S</h4>
+                                        <div>Android App</div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item"><a href="https://github.com/mervinhemaraju/th3pl4gu3-cloud">
+                                <figure class="portfolio-item"><img src="images/portfolio/terraform.webp"
+                                        data-bp="images/portfolio/terraform.webp" alt="terraform" />
+                                    <figcaption>
+                                        <h4 class="h5 mb-0">My Cloud Setup with Terraform</h4>
+                                        <div>Terraform, AWS, Python</div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item"><a href="https://github.com/mervinhemaraju/freshservice-sdk-python">
+                                <figure class="portfolio-item"><img src="images/portfolio/freshservice.webp"
+                                        data-bp="images/portfolio/freshservice.webp" alt="freshservice-sdk-python" />
+                                    <figcaption>
+                                        <h4 class="h5 mb-0">freshservice-sdk-python</h4>
+                                        <div>Python, Freshservice, Pypi</div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item"><a href="https://github.com/mervinhemaraju/snappy">
+                                <figure class="portfolio-item"><img src="images/portfolio/python-boto3-aws.webp"
+                                        data-bp="images/portfolio/python-boto3-aws.webp" alt="python-boto3-aws" />
+                                    <figcaption>
+                                        <h4 class="h5 mb-0">Snappy</h4>
+                                        <div>Python, Boto3, Pypi</div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item"><a href="https://github.com/mervinhemaraju/multipurpose-scripts">
+                                <figure class="portfolio-item"><img src="images/portfolio/python.webp"
+                                        data-bp="images/portfolio/python.webp" alt="python" />
+                                    <figcaption>
+                                        <h4 class="h5 mb-0">Python Scripts</h4>
+                                        <div>Python, Boto3</div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Contact section -->
+            <div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact">
+                <div class="container-narrow">
+                    <div class="text-center mb-5">
+                        <h2 class="marker marker-center">Contact Me</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="bg-light my-2 p-3 pt-2">
+                                <form method="POST">
+                                    <div class="form-group my-2">
+                                        <label for="name" class="form-label fw-bolder">Name</label>
+                                        <input class="form-control" type="text" id="sender_name" name="sender_name"
+                                            required>
+                                    </div>
+                                    <div class="form-group my-2">
+                                        <label for="email" class="form-label fw-bolder">Email</label>
+                                        <input class="form-control" type="email" id="sender_email" name="sender_email"
+                                            required>
+                                    </div>
+                                    <div class="form-group my-2">
+                                        <label for="message" class="form-label fw-bolder">Message</label>
+                                        <textarea class="form-control" style="resize: none;" id="email_body"
+                                            name="email_body" rows="4" required></textarea>
+                                    </div>
+                                    <h4 id="response"></h4>
+                                    <input type="hidden" id="originator" value="portfolio" />
+                                    <button class="btn btn-primary mt-2" type="submit">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+                            <div class="mt-3 px-1">
+                                <div class="h5">Let’s talk how I can help you!</div>
+                                <p>
+                                    If you like my work or want to see any of my works or view my documents, please drop
+                                    me a message using the contact form.
+                                </p>
+                                <p>Or get in touch using my email, Whatsapp or contact number.</p>
+                                <p>See you!</p>
+                            </div>
+                            <div class="mt-53 px-1">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <div class="pb-1">Email:</div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="pb-1 fw-bolder">
+                                            <a href="mailto:mervinhemaraju16@gmail.com">
+                                                mervinhemaraju16@gmail.com
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="pb-1">Whatsapp:</div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="pb-1 fw-bolder">
+                                            <a href="tel:+23058001196">
+                                                +230-5-8001196
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="pb-1">Phone:</div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="pb-1 fw-bolder">
+                                            <a href="tel:+23058001196">
+                                                +230-5-8001196
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer section -->
+            <footer class="pt-4 pb-4 text-center bg-light">
+                <div class="container">
+                    <div class="my-3">
+                        <div class="h4">Mervin Hemaraju</div>
+                        <p>IT Platform Engineer</p>
+                        <div class="social-nav">
+                            <nav role="navigation">
+                                <ul class="nav justify-content-center">
+                                    <li class="nav-item"><a class="nav-link" target="_blank"
+                                            href="https://www.linkedin.com/in/mervinh16" title="LinkedIn"><i
+                                                class="fab fa-linkedin fa-lg"></i><span
+                                                class="menu-title sr-only">LinkedIn</span></a></li>
+                                    <li class="nav-item"><a class="nav-link" target="_blank"
+                                            href="https://github.com/mervinhemaraju" title="GitHub"><i
+                                                class="fab fa-github fa-lg"></i><span
+                                                class="menu-title sr-only">GitHub</span></a></li>
+                                    <li class="nav-item"><a class="nav-link" target="_blank"
+                                            href="https://stackoverflow.com/users/6884119/mervin-hemaraju"
+                                            title="Stackoverflow"><i class="fab fa-stack-overflow fa-lg"></i><span
+                                                class="menu-title sr-only">StackOverflow</span></a></li>
+                                    <li class="nav-item"><a class="nav-link" target="_blank"
+                                            href="https://www.facebook.com/mervin16" title="Facebook"><i
+                                                class="fab fa-facebook fa-lg"></i><span
+                                                class="menu-title sr-only">Facebook</span></a></li>
+                                    <li class="nav-item"><a class="nav-link" target="_blank"
+                                            href="https://www.instagram.com/mervinh16" title="Instagram"><i
+                                                class="fab fa-instagram fa-lg"></i><span
+                                                class="menu-title sr-only">Instagram</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="text-small text-secondary">
+                        <div class="mb-1">&copy; Mervin Hemaraju. All rights reserved.</div>
+                        <div>
+                            <!-- Make sure to buy a license for the template before removing the line below. Buy license on https://templateflip.com/ -->Design
+                            - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
+                        <a href="https://icons8.com/icon/kUIdznZvxAud/docker"></a> Icons by <a
+                            href="https://icons8.com">Icons8</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Scroll to Top button -->
+    <div id="scrolltop">
+        <a class="btn btn-secondary" href="#top">
+            <span class="icon">
+                <i class="fas fa-angle-up fa-x"></i>
+            </span>
+        </a>
+    </div>
+
+    <!-- Scriptings -->
+    <script type="text/javascript">
+        function getAge() {
+            var from = "16/03/1996".split("/");
+            var birthdateTimeStamp = new Date(from[2], from[1] - 1, from[0]);
+            var cur = new Date();
+            var diff = cur - birthdateTimeStamp;
+            // This is the difference in milliseconds
+            return Math.floor(diff / 31557600000);
+        }
+
+        var age_field_element = document.getElementById('my-age');
+        age_field_element.innerText = getAge()
+    </script>
+
+    <script>
+        (() => {
+            const form = document.querySelector('form');
+            const submitResponse = document.querySelector('#response');
+            const formURL = 'https://quelwkszqfxee6jfcjwweqqgnq0phkah.lambda-url.eu-west-1.on.aws';
+
+            form.onsubmit = e => {
+                e.preventDefault();
+
+                // Capture the form data
+                let data = {};
+                Array.from(form).map(input => (data[input.id] = input.value));
+                console.log('Sending: ', JSON.stringify(data));
+                submitResponse.innerHTML = 'Sending...'
+
+                // Create the AJAX request
+                var xhr = new XMLHttpRequest();
+                xhr.open(form.method, formURL, true);
+                xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
+                xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+                // Send the collected data as JSON
+                xhr.send(JSON.stringify(data));
+
+                xhr.onloadend = response => {
+                    if (response.target.status === 200) {
+                        form.reset();
+                        submitResponse.innerHTML = 'Form submitted. Success!';
+                    } else {
+                        submitResponse.innerHTML = 'Error! Please try again.';
+                        console.error(JSON.parse(response));
+                    }
+                };
+            };
+        })();
+    </script>
+
+    <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
+    <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
+    <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
+    <script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
+    <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="./scripts/aos.min.js?ver=1.2.0"></script>
+    <script src="./scripts/main.js?ver=1.2.0"></script>
+
+    <!-- End of file -->
+</body>
+
+</html>

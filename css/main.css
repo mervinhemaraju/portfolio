@@ -1,242 +1,105 @@
-body,
-html {
-  overflow-x: hidden
+/* Root Variables */
+:root {
+    --color-primary: #091a31;
+    --color-accent: #b1ff34;
+    --color-surface: #10223f;
+    --color-ripple: #b1ff341a;
+    --color-text: #cdd6f6;
+    --color-text-light: #8992b0;
+}
+
+/* Key Frames */
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation classes */
+.animate-slideUp {
+    animation: slideUp 0.5s ease-out;
+}
+
+/* Css clasess */
+* {
+    font-family: "NTR", sans-serif;
 }
 
 html {
-  scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
-@media screen and (prefers-reduced-motion:reduce) {
-  html {
-    scroll-behavior: auto
-  }
+body.bg-primary,
+nav {
+    background-color: var(--color-primary) !important;
 }
 
-.section {
-  scroll-margin-top: 2rem
+.bg-surface {
+    background-color: var(--color-surface) !important;
 }
 
-.site-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 3rem;
-  text-decoration: none
+.text-accent {
+    color: var(--color-accent)
 }
 
-@media (min-width:48em) {
-  .site-title {
-    float: left
-  }
+.text-headers {
+    color: var(--color-text)
 }
 
-.nav-link {
-  font-weight: 700;
-  color: rgba(0, 0, 0, .8) !important
+.text-item {
+    color: var(--color-text)
 }
 
-.social-nav .nav-link {
-  padding: 0 .5rem;
-  font-size: 1.1rem;
-  line-height: 2.5rem
+.text-item:hover {
+    color: var(--color-accent)
 }
 
-.nav-link:focus,
-.nav-link:hover {
-  color: rgba(0, 0, 0, .6) !important
+.text-paragraph {
+    color: var(--color-text-light);
 }
 
-.intro-title {
-  font-weight: 800
+.text-paragraph li {
+    display: flex;
+    align-items: flex-start;
 }
 
-@-webkit-keyframes animateWave {
-  0% {
-    transform: scale(1, 0)
-  }
-
-  100% {
-    transform: scale(1, 1)
-  }
+.text-paragraph li i {
+    margin-right: 8px;
+    /* Adjust the spacing as needed */
 }
 
-@keyframes animateWave {
-  0% {
-    transform: scale(1, 0)
-  }
-
-  100% {
-    transform: scale(1, 1)
-  }
+.text-paragraph li::marker {
+    content: none;
+    /* Remove default list marker */
 }
 
-.wave-bg {
-  display: block;
-  height: 220px;
-  width: 100%;
-  min-width: 600px;
-  transform-origin: top;
-  -webkit-animation: animateWave 2s cubic-bezier(.23, 1, .32, 1) forwards;
-  animation: animateWave 2s cubic-bezier(.23, 1, .32, 1) forwards;
-  background-image: url(http://mervinhemaraju.com/images/wave-bg.svg);
-  background-position: center;
-  background-repeat: no-repeat
+.button-primary {
+    border: var(--color-accent) 1px solid;
+    color: var(--color-accent)
 }
 
-img.avatar {
-  border-radius: 30px
+.button-primary:hover {
+    background-color: var(--color-ripple);
 }
 
-.grid:after {
-  content: '';
-  display: block;
-  clear: both
+.icon-primary {
+    fill: var(--color-text-light)
 }
 
-.grid-item,
-.grid-sizer {
-  width: 100%
+.tab-item {
+    color: var(--color-text-light);
+    padding: 0;
+    font-weight: lighter;
+    font-size: larger
 }
 
-.grid-item {
-  padding-bottom: 12px
-}
 
-@media (min-width:48em) {
-
-  .grid-item,
-  .grid-sizer {
-    width: 25%
-  }
-
-  .grid-item {
-    float: left;
-    padding: 6px
-  }
-}
-
-.grid-item img {
-  display: block;
-  width: 100%;
-  max-width: 100%
-}
-
-.portfolio-item {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  margin: 0
-}
-
-.portfolio-item figcaption {
-  position: absolute;
-  top: auto;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 12px;
-  background: rgba(255, 255, 255, .75);
-  transition: transform .35s;
-  transform: translate3d(0, 100%, 0)
-}
-
-.portfolio-item figcaption h4 {
-  color: #222;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 3px
-}
-
-.portfolio-item figcaption p {
-  color: #444;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 0
-}
-
-.portfolio-item:hover figcaption {
-  transform: translate3d(0, 0, 0)
-}
-
-footer a:not(.nav-link) {
-  color: inherit;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer
-}
-
-#scrolltop {
-  display: block;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity .5s ease-in;
-  position: fixed;
-  bottom: 20px;
-  right: 20px
-}
-
-#scrolltop .btn {
-  padding: 3px 11px;
-  border-radius: 50%
-}
-
-.container-narrow {
-  max-width: 1024px;
-  margin: 0 auto
-}
-
-.text-small {
-  font-size: .875rem
-}
-
-.text-uppercase {
-  letter-spacing: .05em
-}
-
-.hover-effect {
-  transition: transform .18s ease-in-out
-}
-
-.hover-effect:hover {
-  transform: translateY(-2px)
-}
-
-.marker {
-  position: relative;
-  display: inline;
-  width: auto
-}
-
-.marker-center {
-  padding-right: 0
-}
-
-.marker:after {
-  content: "";
-  width: 125px;
-  height: 30px;
-  position: absolute;
-  bottom: -25px;
-  right: -30px;
-  background-image: url(http://mervinhemaraju.com/images/marker.svg);
-  background-repeat: no-repeat
-}
-
-.marker-center:after {
-  bottom: -30px;
-  left: 50%;
-  margin-left: -60px
-}
-
-@media (max-width:575.98px) {
-  .marker {
-    padding-right: 0
-  }
-
-  .marker:after {
-    bottom: -30px;
-    left: 50%;
-    margin-left: -60px
-  }
+#experienceTab a[aria-selected="true"] {
+    color: var(--color-accent);
 }
