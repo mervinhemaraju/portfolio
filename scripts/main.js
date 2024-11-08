@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const tabs = document.querySelectorAll('#experienceTab li a');
   const tabContents = document.querySelectorAll('#experienceTabContent > div');
 
-
   document.getElementById('mobile-menu-button').addEventListener('click', function () {
       var menu = document.getElementById('mobile-menu');
       const iconOpen = document.getElementById('icon-open');
@@ -28,9 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
           // Remove active class from all tabs
           tabs.forEach(t => t.parentElement.classList.remove('active'));
+          tabs.forEach(t => t.classList.remove('active'));
 
           // Add active class to the clicked tab
           this.parentElement.classList.add('active');
+          this.classList.add('active');
 
           // Hide all tab contents
           tabContents.forEach(content => content.classList.add('hidden'));
