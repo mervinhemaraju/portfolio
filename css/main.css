@@ -94,11 +94,17 @@ nav {
 
 .tab-item {
     color: var(--color-text-light);
-    padding: 0;
     font-weight: lighter;
-    font-size: larger
+    font-size: larger;
 }
 
+.tab-item.active {
+    border-color: var(--accent-color);
+}
+
+#experienceTab {
+    border-right: 1px solid var(--color-surface)
+}
 
 #experienceTab a[aria-selected="true"] {
     color: var(--color-accent);
