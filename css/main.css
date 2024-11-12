@@ -109,3 +109,29 @@ nav {
 #experienceTab a[aria-selected="true"] {
     color: var(--color-accent);
 }
+
+.wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.typing-demo {
+    width: 14ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    word-wrap: break-word;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
