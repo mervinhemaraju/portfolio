@@ -242,18 +242,11 @@
             </div>
 
             <div class="mb-3 justify-center mx-auto text-center">
-                <div class="wrapper">
-                    <h1 class="text-4xl sm:text-7xl font-thin text-headers mb-3 typing-demo">
-                        hey,
-                        <span class="text-accent font-bold mx-2"> mervin </span>
-                        here.
-                    </h1>
-                </div>
-                <!-- <h1 class="text-7xl font-thin text-headers mb-3">
+                <h1 class="text-4xl sm:text-7xl font-thin text-headers mb-3 mx-auto typing-demo">
                     hey,
                     <span class="text-accent font-bold mx-2"> mervin </span>
                     here.
-                </h1> -->
+                </h1>
                 <h2 class="text-2xl sm:text-5xl text-paragraph font-thin">I code when I'm bored.</h2>
             </div>
 
@@ -407,7 +400,24 @@
                         <div class="text-left text-gray-200" id="checkout-action" role="tabpanel"
                             aria-labelledby="checkout">
                             <h3 class="text-3xl text-headers mb-1">L2, Cloud Platform Engineer</h3>
-                            <h4 class="text-xl text-paragraph font-thin mb-4">2021 - PRESENT</h4>
+                            <h4 class="text-xl text-paragraph font-thin mb-4">2022 - 2024</h4>
+
+                            <button id="toggleButton" type="button"
+                                class="button-primary p-1 px-2 font-medium text-m text-center mb-6">
+                                <i class="fa-solid fa-circle-plus me-2"></i>
+                                show more
+                            </button>
+
+                            <div id="toggleDiv" class="space-y-4 pb-6 hidden">
+                                <div class="text-paragraph font-bold">
+                                    <h5 class="pb-1 text-l text-headers">L1, Cloud Platform Engineer </h5>
+                                    <h6 class="text-s">Jan 2022 - Aug 2022</h6>
+                                </div>
+                                <div class="text-paragraph font-bold">
+                                    <h5 class="pb-1 text-l text-headers">System Operations Engineer </h5>
+                                    <h6 class="text-s">Mar 2021 - Jan 2022</h6>
+                                </div>
+                            </div>
 
                             <ol class="text-paragraph">
                                 <li class="mb-4">
@@ -737,6 +747,7 @@
 
 
     <script src="scripts/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

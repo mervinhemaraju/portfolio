@@ -21,6 +21,18 @@
     }
 }
 
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
 /* Animation classes */
 .animate-slideUp {
     animation: slideUp 0.5s ease-out;
@@ -102,36 +114,20 @@ nav {
     border-color: var(--accent-color);
 }
 
+.typing-demo {
+    width: 14ch;
+    animation: typing 1.8s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid var(--color-accent);
+    word-wrap: break-word;
+}
+
+/* CSS IDs */
 #experienceTab {
     border-right: 1px solid var(--color-surface)
 }
 
 #experienceTab a[aria-selected="true"] {
     color: var(--color-accent);
-}
-
-.wrapper {
-    display: grid;
-    place-items: center;
-}
-
-.typing-demo {
-    width: 14ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    word-wrap: break-word;
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
-    }
 }

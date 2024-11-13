@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const tabs = document.querySelectorAll('#experienceTab li a');
   const tabContents = document.querySelectorAll('#experienceTabContent > div');
 
+  $("#toggleButton").click(function(){
+    $("#toggleDiv").slideToggle("slow");
+});
+
   document.getElementById('mobile-menu-button').addEventListener('click', function () {
       var menu = document.getElementById('mobile-menu');
       const iconOpen = document.getElementById('icon-open');
