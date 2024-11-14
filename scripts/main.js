@@ -1,6 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-
     // Get the tabs for the experience section
     const tabs = document.querySelectorAll('#experienceTab li a');
     const tabContents = document.querySelectorAll('#experienceTabContent > div');
@@ -10,14 +9,18 @@ document.addEventListener('DOMContentLoaded', function () {
         $("#toggleDiv").slideToggle("slow");
     });
 
-    // Updates the menu icon
-    document.getElementById('mobile-menu-button').addEventListener('click', function () {
-        var menu = document.getElementById('mobile-menu');
-        const iconOpen = document.getElementById('icon-open');
-        const iconClose = document.getElementById('icon-close');
-        menu.classList.toggle('hidden');
-        iconOpen.classList.toggle('hidden');
-        iconClose.classList.toggle('hidden');
+    // Adds animation and updates the mobile device menu
+    $('#mobile-menu-button').click(function() {
+        var menu = $('#mobile-menu');
+        const iconOpen = $('#icon-open');
+        const iconClose = $('#icon-close');
+        iconOpen.toggleClass('hidden');
+        iconClose.toggleClass('hidden');
+        if (menu.is(':visible')) {
+            menu.slideUp();
+        } else {
+            menu.slideDown();
+        }
     });
 
     // Experience tabs updates
